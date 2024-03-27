@@ -124,6 +124,10 @@ import Atta4 from "../assets/images/Atta/Atta4.jpeg"
 import Atta5 from "../assets/images/Atta/Atta5.jpeg"
 import Atta6 from "../assets/images/Atta/Atta6.jpeg"
 import Atta7 from "../assets/images/Atta/Atta7.jpeg"
+import Atta8 from "../assets/images/Atta/Atta8.png"
+import Atta9 from "../assets/images/Atta/Atta9.png"
+import Atta10 from "../assets/images/Atta/Atta10.png"
+import Atta11 from "../assets/images/Atta/Atta11.png"
 
 import AjinoMoto from "../assets/images/chinese/AjinoMoto.jpeg"
 import ChilliChickenSauce from "../assets/images/chinese/ChilliChickenSauce.jpeg"
@@ -170,6 +174,8 @@ import GemU from "../assets/images/italian/GemU.png"
 import Ananas from "../assets/images/italian/Ananas.png"
 import Pelati from "../assets/images/italian/Pelati.png"
 import Pulpa from "../assets/images/italian/Pulpa.png"
+import Kropak from "../assets/images/chinese/Kropak.png"
+import OBWithoutSeed from "../assets/images/italian/OBWithoutSeed.png"
 
 import LQ1 from "../assets/images/Liquor/LQ1.jpeg"
 import LQ2 from "../assets/images/Liquor/LQ2.jpeg"
@@ -199,9 +205,12 @@ import LQ24 from "../assets/images/Liquor/LQ24.jpeg"
 import LQ25 from "../assets/images/Liquor/LQ25.jpeg"
 import LQ26 from "../assets/images/Liquor/LQ26.jpeg"
 import LQ27 from "../assets/images/Liquor/LQ27.jpeg"
+
+
 import Oil1 from "../assets/images/Oil/Oil1.jpeg"
 import Oil2 from "../assets/images/Oil/Oil2.jpeg"
 import Oil3 from "../assets/images/Oil/Oil3.jpeg"
+import Oil4 from "../assets/images/Oil/Oil4.png"
 
 import Others1 from "../assets/images/Others/Others1.jpeg"
 import Others2 from "../assets/images/Others/Others2.jpeg"
@@ -930,6 +939,78 @@ export const itemsList = [
             articleBrand: "Wagh Bakri",
             articleQuantity: ["1KG/450GM"]
         },
+        {
+            articleNo: "",
+            articleName: "Vindaloo Paste",
+            articleDescription: "",
+            articleImage: VinPaste,
+            articleBrand: "PATAK",
+            articleQuantity: ["2.3KG x 2"]
+        },
+        {
+            articleNo: "",
+            articleName: "Mild Curry Paste",
+            articleDescription: "",
+            articleImage: MildCPaste,
+            articleBrand: "PATAK",
+            articleQuantity: ["2.3KG x 2"]
+        },
+        {
+            articleNo: "",
+            articleName: "Balti Curry Paste",
+            articleDescription: "",
+            articleImage: BaltiCPaste,
+            articleBrand: "PATAK",
+            articleQuantity: ["2.3KG x 2"]
+        },
+        {
+            articleNo: "",
+            articleName: "Mix Pickle",
+            articleDescription: "",
+            articleImage: MixPickle,
+            articleBrand: "PATAK",
+            articleQuantity: ["2.3KG x 2"]
+        },
+        {
+            articleNo: "",
+            articleName: "Biryani Paste",
+            articleDescription: "",
+            articleImage: BiryaniPaste,
+            articleBrand: "PATAK",
+            articleQuantity: ["2.3KG x 2"]
+        },
+        {
+            articleNo: "",
+            articleName: "Tikka Masala Paste",
+            articleDescription: "",
+            articleImage: TikkaMPaste,
+            articleBrand: "PATAK",
+            articleQuantity: ["2.3KG x 2"]
+        },
+        {
+            articleNo: "",
+            articleName: "Korma Paste",
+            articleDescription: "",
+            articleImage: KormaP,
+            articleBrand: "PATAK",
+            articleQuantity: ["2.3KG x 2"]
+        },
+        {
+            articleNo: "",
+            articleName: "Kashmiri Masala Paste",
+            articleDescription: "",
+            articleImage: KashMPaste,
+            articleBrand: "PATAK",
+            articleQuantity: ["2.3KG x 2"]
+        },
+        {
+            articleNo: "",
+            articleName: "Jal Frezi Paste",
+            articleDescription: "",
+            articleImage: JalfreziP,
+            articleBrand: "PATAK",
+            articleQuantity: ["2.3KG x 2"]
+        },
         // -----------------------additional--------------------------------
         {
             articleNo: "4238",
@@ -1011,7 +1092,7 @@ export const itemsList = [
             articleDescription: "Dale Chole",
             articleImage: ChanaDal,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KG x 6 Packung", "1Kg x 10 Packung", "500GM x 20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },
         {
             articleNo: "217",
@@ -1019,7 +1100,7 @@ export const itemsList = [
             articleDescription: "similar chana daal, arhar daal",
             articleImage: ToorDal,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },
         {
             articleNo: "185",
@@ -1027,7 +1108,7 @@ export const itemsList = [
             articleDescription: "chick peas, white chana",
             articleImage: KabuliChana,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },
         {
             articleNo: "234",
@@ -1035,7 +1116,7 @@ export const itemsList = [
             articleDescription: "Yellow gram",
             articleImage: KalaChana,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },
         {
             articleNo: "195",
@@ -1043,7 +1124,7 @@ export const itemsList = [
             articleDescription: "Yellow clr, Mungi Dhiti daal",
             articleImage: MoongWashed,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KG x 6 Packung", "1Kg x 10 Packung", "500GM x 20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },
         {
             articleNo: "191",
@@ -1051,7 +1132,7 @@ export const itemsList = [
             articleDescription: "green/yellow colour",
             articleImage: MoongChilka,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },
         {
             articleNo: "198",
@@ -1059,7 +1140,7 @@ export const itemsList = [
             articleDescription: "green color",
             articleImage: MoongWhole,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },
         {
             articleNo: "231",
@@ -1067,7 +1148,7 @@ export const itemsList = [
             articleDescription: "Black daal, mah ki daal",
             articleImage: UridWhole,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },
         {
             articleNo: "234",
@@ -1075,7 +1156,7 @@ export const itemsList = [
             articleDescription: "Mass daal, urid washed, dhuli hui urid daal",
             articleImage: UridGota,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },
         {
             articleNo: "3862",
@@ -1083,7 +1164,7 @@ export const itemsList = [
             articleDescription: "black daal, mah ki daal",
             articleImage: UridGota,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },
         {
             articleNo: "222",
@@ -1091,7 +1172,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: UridDalChilka,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },
         {
             articleNo: "206",
@@ -1099,7 +1180,7 @@ export const itemsList = [
             articleDescription: "Rajma, Kidney Bohnen",
             articleImage: RedKidneyBeans,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },
         {
             articleNo: "171",
@@ -1107,7 +1188,7 @@ export const itemsList = [
             articleDescription: "rongi daal, lobiya",
             articleImage: BlackEyeBeans,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },
         {
             articleNo: "3859",
@@ -1115,7 +1196,7 @@ export const itemsList = [
             articleDescription: "Dusri rajma",
             articleImage: RosecocoBean,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },
         {
             articleNo: "174",
@@ -1123,7 +1204,7 @@ export const itemsList = [
             articleDescription: "Sabat masar daal",
             articleImage: BrownLentils,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },      
         {
             articleNo: "210",
@@ -1131,7 +1212,7 @@ export const itemsList = [
             articleDescription: "laal masar, masar ki daal",
             articleImage: RedLentils,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },        
         {
             articleNo: "199",
@@ -1139,7 +1220,7 @@ export const itemsList = [
             articleDescription: "Brown colour",
             articleImage: MothDal,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["2KG x 6 Packung (TRS/ANJU)", "1Kg x 12 Packung (ANJU)","1Kg x 10 Packung (TRS)", "500GM x 20 Pakung (TRS/ANJU)"]
         },       
         {
             articleNo: "234",
@@ -1147,7 +1228,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: SoyaChunks,
             articleBrand: "TRS, HEERA",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["1Kg x 6 Packung", "750GM x 6 Pakung","500GM x 6 Pakung", "400GM x 6 Pakung", "250GM x 10 pakung"]
         },        
         // -------------------------chickpeas--------------------
         {
@@ -1156,7 +1237,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: ChickPeas,
             articleBrand: "TRS, ANJU",
-            articleQuantity: ["2KGx6 Packung", "1Kgx10 Packung", "500GMx20 Pakung"]
+            articleQuantity: ["2.5KG x 6 Packung", "800GM x 6 Packung", "400GM x 12 Pakung"]
         },
     ]},
     {id:3, name: "Atta", image: Atta, items: [
@@ -1218,19 +1299,35 @@ export const itemsList = [
         },
         {
             articleNo: "",
-            articleName: "Vogtmuh Mehl",
+            articleName: "Vogtmuhlen Mehl",
             articleDescription: "",
-            articleImage: Atta7,
+            articleImage: Atta11,
             articleBrand: "Vogtmuh",
             articleQuantity: ["10KG"]
         },
         {
             articleNo: "",
-            articleName: "Adica Mehl",
+            articleName: "Elephant Chappati Atta",
             articleDescription: "",
-            articleImage: Atta7,
-            articleBrand: "Adica",
-            articleQuantity: ["1KG"]
+            articleImage: Atta8,
+            articleBrand: "Elephant",
+            articleQuantity: ["10KG"]
+        },
+        {
+            articleNo: "",
+            articleName: "Makki Atta Heera",
+            articleDescription: "",
+            articleImage: Atta9,
+            articleBrand: "Heera",
+            articleQuantity: ["1KG x 20 pakung"]
+        },
+        {
+            articleNo: "",
+            articleName: "Juwar Atta",
+            articleDescription: "",
+            articleImage: Atta10,
+            articleBrand: "TRS/Heera",
+            articleQuantity: ["1KG x 10 pakung"]
         },
         
     ]},
@@ -1242,7 +1339,7 @@ export const itemsList = [
         articleDescription: "Chinese Salt, Gluta Mat",
         articleImage: AjinoMoto,
         articleBrand: "",
-        articleQuantity: ["454GM x 24 "]
+        articleQuantity: ["453GM x 20 pakung "]
     },
     {
         articleNo: "2208",
@@ -1250,7 +1347,7 @@ export const itemsList = [
         articleDescription: "Dragon flour",
         articleImage: SelfRaisingFlour,
         articleBrand: "",
-        articleQuantity: ["1KG"]
+        articleQuantity: ["1.5KG x 10 pakung"]
     },
     {
         articleNo: "2142",
@@ -1274,7 +1371,7 @@ export const itemsList = [
         articleDescription: "suss , Swiss, sweet chilli sauce",
         articleImage: ChilliChickenSauceSM,
         articleBrand: "",
-        articleQuantity: ["800GM"]
+        articleQuantity: ["800GM x 12"]
     },
     {
         articleNo: "4748",
@@ -1322,7 +1419,7 @@ export const itemsList = [
         articleDescription: "",
         articleImage: SoyaSauceSM,
         articleBrand: "",
-        articleQuantity: ["500ML x 12"]
+        articleQuantity: ["500ML x 12/24"]
     },
     {
         articleNo: "2676",
@@ -1330,7 +1427,7 @@ export const itemsList = [
         articleDescription: "",
         articleImage: SoyaSauceDark,
         articleBrand: "",
-        articleQuantity: ["500ML x 12"]
+        articleQuantity: ["500ML x 24"]
     },
     {
         articleNo: "2327",
@@ -1360,7 +1457,7 @@ export const itemsList = [
         articleNo: "NA",
         articleName: "Kroepoek",
         articleDescription: "Fish fry chips",
-        articleImage: BambooChinese,
+        articleImage: Kropak,
         articleBrand: "",
         articleQuantity: ["200GM x 60", "1KG x 12"]
     },
@@ -1374,7 +1471,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: PastaGnocchi,
             articleBrand: "",
-            articleQuantity: ["500GM"]
+            articleQuantity: ["5KG x 3 pakung"]
         },
         {
             articleNo: "4398",
@@ -1382,23 +1479,23 @@ export const itemsList = [
             articleDescription: "",
             articleImage: PastaGelb,
             articleBrand: "",
-            articleQuantity: ["500GM"]
+            articleQuantity: ["5KG x 3 pakung"]
         },
         {
             articleNo: "4408",
-            articleName: "Pasta Penne",
+            articleName: "Pasta Penne 27K",
             articleDescription: "",
             articleImage: PastaPenne,
             articleBrand: "",
-            articleQuantity: ["5KG"]
+            articleQuantity: ["5KG x 3 pakung"]
         },
         {
             articleNo: "3567",
-            articleName: "Pasta Rigatoni Elocodali Nr. 22",
+            articleName: "Pasta Rigatoni Elocodali Nr. 22K",
             articleDescription: "",
             articleImage: PastaRigatoni,
             articleBrand: "",
-            articleQuantity: ["5KG"]
+            articleQuantity: ["5KG x 3 pakung"]
         },
         {
             articleNo: "3616",
@@ -1406,7 +1503,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: PastaSpaghetti,
             articleBrand: "",
-            articleQuantity: ["5KG"]
+            articleQuantity: ["5KG x 3 pakung"]
         },
         {
             articleNo: "4774",
@@ -1414,7 +1511,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: PastaSemola,
             articleBrand: "",
-            articleQuantity: ["500GM"]
+            articleQuantity: ["5KG x 3 pakung"]
         },
         {
             articleNo: "1613",
@@ -1422,7 +1519,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: PastaBunt,
             articleBrand: "",
-            articleQuantity: ["500GM"]
+            articleQuantity: ["5KG x 3 pakung"]
         },
         {
             articleNo: "1614",
@@ -1430,7 +1527,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: PastaGelb,
             articleBrand: "",
-            articleQuantity: ["500GM"]
+            articleQuantity: ["5KG x 3 pakung"]
         },
         {
             articleNo: "2601",
@@ -1484,13 +1581,21 @@ export const itemsList = [
             articleNo: "",
             articleName: "Schwarz(Black) Oliven Ohne Stein(seed)",
             articleDescription: "",
+            articleImage: OBWithoutSeed,
+            articleBrand: "Adria, La-perla",
+            articleQuantity: ["4.2KG x 6"]
+        },
+        {
+            articleNo: "",
+            articleName: "Schwarz(Black) Oliven mit Stein(seed)",
+            articleDescription: "",
             articleImage: OlivenBlackSeed,
             articleBrand: "Adria, La-perla",
             articleQuantity: ["4.2KG x 6"]
         },
         {
             articleNo: "",
-            articleName: "Schwarz(Black) Oliven Ohne Stein",
+            articleName: "Schwarz(Black) Oliven in Shiben",
             articleDescription: "",
             articleImage: OlivenBlack,
             articleBrand: "Adria, La-perla",
@@ -1578,8 +1683,8 @@ export const itemsList = [
         },
         {
             articleNo: "",
-            articleName: "Kapern",
-            articleDescription: "",
+            articleName: "Kapern (Surfines)",
+            articleDescription: "Surfines",
             articleImage: Kapern,
             articleBrand: "Adria",
             articleQuantity: ["800GM x 12"]
@@ -1615,134 +1720,80 @@ export const itemsList = [
             articleImage: Pelati,
             articleBrand: "Mutti, Sacra, La roseno",
             articleQuantity: ["2650ML x 6",]
-        },
-        {
-            "articleNo": 1794,
-            "articleName": "Tintenfischtuben O.K  U/5",
-            "articleQuantity": ["1KG x 10 packing"],
-            "articleImage": FZ29
-          },
-          {
-            "articleNo": 2444,
-            "articleName": "Pangasius Filet Vietnam",
-            "articleQuantity": ["1KG"],
-            "articleImage": FZ31
-          },
-          {
-            "articleNo": 1792,
-            "articleName": "Shrimps Cocktail  100/200 ",
-            "articleQuantity": ["1KG"],
-            "articleImage": FZ32
-          },
-          {
-            "articleNo": 3740,
-            "articleName": "Frutti di Mare (Marinara Mix)",
-            "articleQuantity": ["1kg"],
-            "articleImage": FZ33
-          },
-          {
-            "articleNo": 5016,
-            "articleName": "Zanderfilet mit Haut",
-            "articleQuantity": ["5KG"],
-            "articleImage": FZ43
-          },
-          {
-            "articleNo": 1787,
-            "articleName": "Riesengarnellen roh,  8/12 (Ohne Kopf, ohne schale/Ohne Kopf, MIT schale  ",
-            "articleQuantity": ["1KG"],
-            "articleImage": FZ40
-          },
-          {
-            "articleNo": 45596,
-            "articleName": "Seelachsfilet 8-16",
-            "articleQuantity": ["9KG"],
-            "articleImage": FZ42
-          },
-          {
-            "articleNo": 3316,
-            "articleName": "Riesengarnelen( 6/8 , 13/15) ",
-            "articleQuantity": ["1KG"],
-            "articleImage": FZ41
-          },
-          {
-            "articleNo": 3297,
-            "articleName": "Riesengarnellen roh, 31/40 Ohne Kopf ohne schale",
-            "articleQuantity": ["1KG"],
-            "articleImage": FZ39
-          }, 
+        }, 
     ]},
     {id:6, name: "Liquor", image: Liquor, items: [
         {
             articleNo: "1909",
             articleName: "Chianti 12.5%vol",
-            articleDescription: "",
+            articleDescription: "Red Wine",
             articleImage: LQ1,
             articleBrand: "",
-            articleQuantity: ["0.75L/1.5LTR"]
+            articleQuantity: ["0.75L/1.5LTR x 6 flasche"]
         },
         {
             articleNo: "1930",
             articleName: "Pinot Grigio 12% vol",
-            articleDescription: "",
+            articleDescription: "White Wine",
             articleImage: LQ2,
             articleBrand: "",
-            articleQuantity: ["0.75L/1.5LTR"]
+            articleQuantity: ["0.75L/1.5LTR x 6 flasche"]
         },
         {
             articleNo: "1921",
             articleName: "Lambrusco 10.50%  ",
-            articleDescription: "",
+            articleDescription: "Red wine",
             articleImage: LQ3,
             articleBrand: "",
-            articleQuantity: ["0.75L/1.5LTR"]
+            articleQuantity: ["0.75L/1.5LTR x 6 flasche"]
         },
         {
             articleNo: "1924",
             articleName: "Merlot Rotwein 12%vol",
-            articleDescription: "",
+            articleDescription: "Red Wine",
             articleImage: LQ4,
             articleBrand: "",
-            articleQuantity: ["0.75L/1.5LTR"]
+            articleQuantity: ["0.75L/1.5LTR x 6 flasche"]
         },
         {
             articleNo: "1907",
             articleName: "Chardonnay Weisswein 12%",
-            articleDescription: "",
+            articleDescription: "White Wine",
             articleImage: LQ5,
             articleBrand: "",
-            articleQuantity: ["0.75L/1.5LTR"]
+            articleQuantity: ["0.75L/1.5LTR x 6 flasche"]
         },
         {
             articleNo: "1911",
             articleName: "Frascati 12%",
-            articleDescription: "",
+            articleDescription: "White Wine",
             articleImage: LQ6,
             articleBrand: "",
-            articleQuantity: ["0.75L/1.5LTR"]
+            articleQuantity: ["0.75L/1.5LTR x 6 flasche"]
         },
         {
             articleNo: "1901",
             articleName: "Bardolino Rotwein 12%",
-            articleDescription: "",
+            articleDescription: "Red Wine",
             articleImage: LQ7,
             articleBrand: "",
-            articleQuantity: ["0.75L/1.5LTR"]
+            articleQuantity: ["0.75L/1.5LTR x 6 flasche"]
         },
         {
             articleNo: "1903",
-            articleName: "VINO Bianco 10%",
-            articleDescription: "",
+            articleName: "Bianco 10%",
+            articleDescription: "White Wine",
             articleImage: LQ8,
             articleBrand: "",
-            articleQuantity: ["0.75L/1.5LTR"]
+            articleQuantity: ["0.75L/1.5LTR x 6 flasche"]
         },
         {
             articleNo: "1937",
             articleName: "Soave 11.5%",
-            articleDescription: "",
+            articleDescription: "White Wine",
             articleImage: LQ9,
             articleBrand: "",
-            articleQuantity: ["0.75L/1.5LTR"]
+            articleQuantity: ["0.75L/1.5LTR x 6 flasche"]
         },
         {
             articleNo: "1926",
@@ -1750,39 +1801,39 @@ export const itemsList = [
             articleDescription: "",
             articleImage: LQ10,
             articleBrand: "",
-            articleQuantity: ["0.75L/1.5LTR"]
+            articleQuantity: ["0.75L/1.5LTR x 6 flasche"]
         },
         {
             articleNo: "2473",
             articleName: "INDIAN Chenin Blanc /Savion Weiß Wine (SULA)12.5%",
-            articleDescription: "",
+            articleDescription: "Red/White wine",
             articleImage: LQ11,
             articleBrand: "",
-            articleQuantity: ["0.75L"]
+            articleQuantity: ["0.75L x 6 flasche"]
         },
         {
             articleNo: "2472",
             articleName: "INDIAN Cabernet Shiraz Rot Wine (SULA) 13.5%",
-            articleDescription: "",
+            articleDescription: "Red/White wine",
             articleImage: LQ12,
             articleBrand: "",
-            articleQuantity: ["0.75L"]
+            articleQuantity: ["0.75L x 6 flasche"]
         },
         {
             articleNo: "3965",
             articleName: "Indian Chenin Blanc/Sauvignon White Wine ( GROVER) 14%",
-            articleDescription: "",
+            articleDescription: "White Wine",
             articleImage: LQ13,
             articleBrand: "",
-            articleQuantity: ["0.75L"]
+            articleQuantity: ["0.75L x 6 flasche"]
         },
         {
             articleNo: "3966",
             articleName: "Indian Cabernet Shiraz Red Wine ( GROVER) 14%",
-            articleDescription: "",
+            articleDescription: "Red Wine",
             articleImage: LQ14,
             articleBrand: "",
-            articleQuantity: ["0.75L"]
+            articleQuantity: ["0.75L x 6 flasche"]
         },
         // ----------------------new------------------------------------
         {
@@ -1790,64 +1841,64 @@ export const itemsList = [
             articleName: "Maaza Mango Juice",
             articleDescription: "",
             articleImage: LQ15,
-            articleBrand: "",
-            articleQuantity: ["1LTR"]
+            articleBrand: "Maaza",
+            articleQuantity: ["1LTR x 12"]
         },
         {
             articleNo: "4705",
             articleName: "Maaza Lychee Juice",
             articleDescription: "",
             articleImage: LQ16,
-            articleBrand: "",
-            articleQuantity: ["1LTR"]
+            articleBrand: "Maaza",
+            articleQuantity: ["1LTR x 12"]
         },
         {
             articleNo: "5150",
             articleName: "Maaza Guava Juice",
             articleDescription: "",
             articleImage: LQ17,
-            articleBrand: "",
-            articleQuantity: ["1LTR"]
+            articleBrand: "Maaza",
+            articleQuantity: ["1LTR x 12"]
         },
         {
             articleNo: "1840",
             articleName: "RUBICON Guava Juice",
             articleDescription: "",
             articleImage: LQ18,
-            articleBrand: "",
-            articleQuantity: ["1LTR"]
+            articleBrand: "RUBICON",
+            articleQuantity: ["1LTR x 12"]
         },
         {
             articleNo: "1844",
             articleName: "RUBICON Lychee Juice",
             articleDescription: "",
             articleImage: LQ19,
-            articleBrand: "",
-            articleQuantity: ["1LTR"]
+            articleBrand: "RUBICON",
+            articleQuantity: ["288ML x 27 dose", "1LTR x 12"]
         },
         {
             articleNo: "1848",
             articleName: "RUBICON Mango Juice",
             articleDescription: "",
             articleImage: LQ20,
-            articleBrand: "",
-            articleQuantity: ["1LTR"]
+            articleBrand: "RUBICON",
+            articleQuantity: ["288ML x 27 dose", "1LTR x 12"]
         },
         {
             articleNo: "1856",
             articleName: "RUBICON Passionfruit Juice",
             articleDescription: "",
             articleImage: LQ21,
-            articleBrand: "",
-            articleQuantity: ["1LTR"]
+            articleBrand: "RUBICON",
+            articleQuantity: ["288ML x 27 dose", "1LTR x 12"]
         },
         {
             articleNo: "1860",
             articleName: "RUBICON Pineappel & Coconut",
             articleDescription: "",
             articleImage: LQ22,
-            articleBrand: "",
-            articleQuantity: ["1LTR"]
+            articleBrand: "RUBICON",
+            articleQuantity: ["288ML x 27 dose", "1LTR x 12"]
         },
         {
             articleNo: "2042",
@@ -1855,7 +1906,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: LQ23,
             articleBrand: "",
-            articleQuantity: ["20FLSH"]
+            articleQuantity: ["20FLSH in 1 kiste(caret)"]
         },
         {
             articleNo: "2046",
@@ -1863,7 +1914,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: LQ24,
             articleBrand: "",
-            articleQuantity: ["24FLSH"]
+            articleQuantity: ["24FLSH in 1 kiste(caret)"]
         },
         {
             articleNo: "3264",
@@ -1871,7 +1922,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: LQ25,
             articleBrand: "",
-            articleQuantity: ["1LTR"]
+            articleQuantity: ["1LTR x 12 flasche"]
         },
         {
             articleNo: "2011",
@@ -1879,7 +1930,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: LQ26,
             articleBrand: "",
-            articleQuantity: ["1LTR/0.75LTR"]
+            articleQuantity: ["0.75LTR x 12 flasche", "1LTR x 6 flasche"]
         },
         {
             articleNo: "5147",
@@ -1887,7 +1938,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: LQ27,
             articleBrand: "",
-            articleQuantity: ["1LTR"]
+            articleQuantity: ["700ML x 12 flasche"]
         },
     ]},
     {id:7, name: "Oil and Ghee", image: Oil, items: [
@@ -1897,7 +1948,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Oil1,
             articleBrand: "",
-            articleQuantity: ["10LTR/1LTR"]
+            articleQuantity: ["10LTR kanister", "1LTR x 12 flasche"]
         },
         {
             articleNo: "3521",
@@ -1905,7 +1956,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Oil2,
             articleBrand: "",
-            articleQuantity: ["10LTR/1LTR"]
+            articleQuantity: ["10LTR kanister", "1LTR x 12 flasche"]
         },
         {
             articleNo: "4415",
@@ -1913,7 +1964,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Oil3,
             articleBrand: "",
-            articleQuantity: ["10LTR"]
+            articleQuantity: ["10LTR kanister"]
         },
         {
             articleNo: "4288",
@@ -1921,7 +1972,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: MustardOil,
             articleBrand: "TRS",
-            articleQuantity: ["4LTR/ 1LTR/ 500ML"]
+            articleQuantity: ["1LTR x 12 flasche",  "500ML x 20 flasche"]
         },
         {
             articleNo: "279",
@@ -1929,64 +1980,22 @@ export const itemsList = [
             articleDescription: "",
             articleImage: GheeButter,
             articleBrand: "KHANUM /TRS",
-            articleQuantity: ["2KG/1KG/500GM"]
+            articleQuantity: ["2KG x 6 tin", "1KG x 12 tin", "500GM x 12 tin"]
         },
         {
             articleNo: "",
             articleName: "Oliven Oil",
             articleDescription: "",
-            articleImage: GheeButter,
-            articleBrand: "",
-            articleQuantity: ["2KG/1KG/500GM"]
+            articleImage: Oil4,
+            articleBrand: "Divella",
+            articleQuantity: ["5LTR x 3","1LTR x 12 tin"]
         },
     ]},
     {id:8, name: "Frozen", image: Frozen, items: [
-        {
-            "articleNo": 4773,
-            "articleName": "Suppengemüse",
-            "articleQuantity": ["2,KG PKT"],
-            "articleImage": FZ1
-          },
-          {
-            "articleNo": 1749,
-            "articleName": "Broccoliroeschen ",
-            "articleQuantity": ["2,5KG PKT"],
-            "articleImage": FZ2
-          },
-          {
-            "articleNo": 4623,
-            "articleName": "GEMÜSE Blumenkohl",
-            "articleQuantity": ["2,5KG PKT"],
-            "articleImage": FZ3
-          },
-          {
-            "articleNo": 3588,
-            "articleName": "BRECHBONEN",
-            "articleQuantity": ["2,5KG PKT"],
-            "articleImage": FZ4
-          },
-          {
-            "articleNo": 1762,
-            "articleName": "Erbsen Sehrfein",
-            "articleQuantity": ["2,5KG"],
-            "articleImage": FZ5
-          },
-          {
-            "articleNo": 3348,
-            "articleName": "KAISERGEMÜSE",
-            "articleQuantity": ["2,5KG PKT"],
-            "articleImage": FZ6
-          },
-          {
-            "articleNo": 3434,
-            "articleName": "Sommergemüse",
-            "articleQuantity": ["2,5KG PKT"],
-            "articleImage": FZ7
-          },
           {
             "articleNo": 3719,
             "articleName": " Hamburgerfleisch Rind",
-            "articleQuantity": ["180GM"],
+            "articleQuantity": ["180GM x 28 packung"],
             "articleImage": FZ8
           },
           {
@@ -2034,19 +2043,19 @@ export const itemsList = [
           {
             "articleNo": 5249,
             "articleName": "HÄHNCHEN Brust (Brasilien)",
-            "articleQuantity": ["12KG"],
+            "articleQuantity": ["2KG packing , 1 carton = 12KG"],
             "articleImage": FZ16
           },
           {
             "articleNo": 3608,
             "articleName": "HÄHNCHEN Brust (Thailand)",
-            "articleQuantity": ["12KG"],
+            "articleQuantity": ["2KG packing , 1 carton = 12KG"],
             "articleImage": FZ17
           },
           {
             "articleNo": 3562,
             "articleName": "Hähnchen Nuggets",
-            "articleQuantity": ["2,500KG"],
+            "articleQuantity": ["2.5KG x 2 packung"],
             "articleImage": FZ18
           },
           {
@@ -2092,26 +2101,7 @@ export const itemsList = [
             "articleQuantity": ["10KG"],
             "articleImage": FZ24
           },
-          {
-            "articleNo": 1748,
-            "articleName": " Blattspinat(Portionen)",
-            "articleQuantity": ["2,5KG"],
-            "articleImage": FZ25,
-            "articleDescription": "Palak"
-          },
-          {
-            "articleNo": 4560,
-            "articleName": " Rahmspinat (Minis IGLO)",
-            "articleQuantity": ["1,3KG"],
-            "articleImage": FZ26,
-            "articleDescription": "Palak"
-          },
-          {
-            "articleNo": 1003,
-            "articleName": "Knoblauch gehackt / Chopped",
-            "articleQuantity": ["1KG"],
-            "articleImage": FZ27
-          },
+          
           {
             "articleNo": 3142,
             "articleName": "Pommes Frietes 9/9",
@@ -2130,31 +2120,31 @@ export const itemsList = [
           {
             "articleNo": 5209,
             "articleName": "SF. CHILI CHEESE Nuggets",
-            "articleQuantity": ["1kg"],
+            "articleQuantity": ["1kg x 6 packung"],
             "articleImage": FZ34
           },
           {
             "articleNo": 4738,
             "articleName": "SF.Mozzarella Sticks ",
-            "articleQuantity": ["1kg"],
+            "articleQuantity": ["1kg x 6 packung"],
             "articleImage": FZ35
           },
           {
             "articleNo": 4750,
             "articleName": "SF.Hamburgerfleisch roh ungewürzt Rind",
-            "articleQuantity": ["(180gm/125GM/100GM)"],
+            "articleQuantity": ["(180gm x 28 packung","125GM x 40 packung","100GM x 50 packung"],
             "articleImage": FZ36
           },
           {
             "articleNo": 5140,
             "articleName": "SF. Chicken Burger Crunchy",
-            "articleQuantity": ["(135GM/90GM)"],
+            "articleQuantity": ["135GM x 4 packung","90GM x 4 packung"],
             "articleImage": FZ37
           },
           {
             "articleNo": 5182,
             "articleName": "Burgerr Brötchen  Bun",
-            "articleQuantity": ["126GM"],
+            "articleQuantity": ["126GM x 24 packung"],
             "articleImage": FZ38
           },
                    
@@ -2164,7 +2154,61 @@ export const itemsList = [
             "articleQuantity": ["5KG"],
             "articleImage": FZ44,
             "articleDescription": "Whole Garlic"
-          }
+          },
+          {
+            "articleNo": 1794,
+            "articleName": "Tintenfischtuben O.K  U/5",
+            "articleQuantity": ["1KG x 10 packing"],
+            "articleImage": FZ29
+          },
+          {
+            "articleNo": 2444,
+            "articleName": "Pangasius Filet Vietnam",
+            "articleQuantity": ["1KG"],
+            "articleImage": FZ31
+          },
+          {
+            "articleNo": 1792,
+            "articleName": "Shrimps Cocktail  100/200 ",
+            "articleQuantity": ["1KG x 10 packung"],
+            "articleImage": FZ32
+          },
+          {
+            "articleNo": 3740,
+            "articleName": "Frutti di Mare (Marinara Mix)",
+            "articleQuantity": ["1kg x 10 packung"],
+            "articleImage": FZ33
+          },
+          {
+            "articleNo": 5016,
+            "articleName": "Zanderfilet mit Haut",
+            "articleQuantity": ["5KG"],
+            "articleImage": FZ43
+          },
+          {
+            "articleNo": 1787,
+            "articleName": "Riesengarnellen roh,  8/12 (Ohne Kopf, ohne schale/Ohne Kopf, MIT schale  ",
+            "articleQuantity": ["1KG x 10 packung"],
+            "articleImage": FZ40
+          },
+          {
+            "articleNo": 45596,
+            "articleName": "Seelachsfilet 8-16",
+            "articleQuantity": ["9KG"],
+            "articleImage": FZ42
+          },
+          {
+            "articleNo": 3316,
+            "articleName": "Riesengarnelen( 6/8 , 13/15) ",
+            "articleQuantity": ["1KG x 10 packung"],
+            "articleImage": FZ41
+          },
+          {
+            "articleNo": 3297,
+            "articleName": "Riesengarnellen roh, 31/40 Ohne Kopf ohne schale",
+            "articleQuantity": ["1KG x 10 packung"],
+            "articleImage": FZ39
+          },
     ]},
     {id:9, name: "Packing", image: Packing, items: [
         {
@@ -2822,16 +2866,16 @@ export const itemsList = [
             articleName: "Sahne Küchensahne 20% (NAARMAN)",
             articleDescription: "",
             articleImage: Paste1,
-            articleBrand: "",
-            articleQuantity: ["1LTR"]
+            articleBrand: "NAARMAN",
+            articleQuantity: ["1LTR x 12 packung"]
         },
         {
             articleNo: "1675",
             articleName: "Sahne Küchensahne 15% (NAARMAN)",
             articleDescription: "",
             articleImage: Paste2,
-            articleBrand: "",
-            articleQuantity: ["1LTR"]
+            articleBrand: "NAARMAN",
+            articleQuantity: ["1LTR x 12 packung"]
         },
         {
             articleNo: "4436",
@@ -2839,7 +2883,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Paste3,
             articleBrand: "",
-            articleQuantity: ["1LTR"]
+            articleQuantity: ["1LTR x 12 packung"]
         },
         {
             articleNo: "5192",
@@ -2847,7 +2891,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Paste4,
             articleBrand: "",
-            articleQuantity: ["1LTR"]
+            articleQuantity: ["1LTR x 12 packung"]
         },
         {
             articleNo: "4684",
@@ -2863,7 +2907,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: NormalYoghurt,
             articleBrand: "",
-            articleQuantity: ["10KG"]
+            articleQuantity: ["10KG", "5KG"]
         },
         {
             articleNo: "",
@@ -2888,7 +2932,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Paste7,
             articleBrand: "",
-            articleQuantity: ["250GM"]
+            articleQuantity: ["250GM x 40 packung"]
         },
         {
             articleNo: "1672",
@@ -2896,7 +2940,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Paste8,
             articleBrand: "",
-            articleQuantity: ["1KG"]
+            articleQuantity: ["1KG x 3 packung"]
         },
         {
             articleNo: "2343",
@@ -3050,78 +3094,7 @@ export const itemsList = [
             articleBrand: "Dairy Valley",
             articleQuantity: ["1KG/500GM"]
         },
-        {
-            articleNo: "",
-            articleName: "Vindaloo Paste",
-            articleDescription: "",
-            articleImage: VinPaste,
-            articleBrand: "PATAK",
-            articleQuantity: ["2.3KG x 2"]
-        },
-        {
-            articleNo: "",
-            articleName: "Mild Curry Paste",
-            articleDescription: "",
-            articleImage: MildCPaste,
-            articleBrand: "PATAK",
-            articleQuantity: ["2.3KG x 2"]
-        },
-        {
-            articleNo: "",
-            articleName: "Balti Curry Paste",
-            articleDescription: "",
-            articleImage: BaltiCPaste,
-            articleBrand: "PATAK",
-            articleQuantity: ["2.3KG x 2"]
-        },
-        {
-            articleNo: "",
-            articleName: "Mix Pickle",
-            articleDescription: "",
-            articleImage: MixPickle,
-            articleBrand: "PATAK",
-            articleQuantity: ["2.3KG x 2"]
-        },
-        {
-            articleNo: "",
-            articleName: "Biryani Paste",
-            articleDescription: "",
-            articleImage: BiryaniPaste,
-            articleBrand: "PATAK",
-            articleQuantity: ["2.3KG x 2"]
-        },
-        {
-            articleNo: "",
-            articleName: "Tikka Masala Paste",
-            articleDescription: "",
-            articleImage: TikkaMPaste,
-            articleBrand: "PATAK",
-            articleQuantity: ["2.3KG x 2"]
-        },
-        {
-            articleNo: "",
-            articleName: "Korma Paste",
-            articleDescription: "",
-            articleImage: KormaP,
-            articleBrand: "PATAK",
-            articleQuantity: ["2.3KG x 2"]
-        },
-        {
-            articleNo: "",
-            articleName: "Kashmiri Masala Paste",
-            articleDescription: "",
-            articleImage: KashMPaste,
-            articleBrand: "PATAK",
-            articleQuantity: ["2.3KG x 2"]
-        },
-        {
-            articleNo: "",
-            articleName: "Jal Frezi Paste",
-            articleDescription: "",
-            articleImage: JalfreziP,
-            articleBrand: "PATAK",
-            articleQuantity: ["2.3KG x 2"]
-        },
+        
         {
             articleNo: "",
             articleName: "Gamuze Bruve",
@@ -3385,7 +3358,79 @@ export const itemsList = [
         },
         
     ]},
-    {id:13, name: "Others", image: Others, items: [
+    {id:13, name: "Frozen and Fresh Sabzi", image: Meat, items: [
+        {
+            "articleNo": 4773,
+            "articleName": "Suppengemüse",
+            "articleDescription": "use for soup,  mix vegtables",
+            "articleQuantity": ["2.5KG PKT x 4"],
+            "articleImage": FZ1
+          },
+          {
+            "articleNo": 1749,
+            "articleName": "Broccoliroeschen ",
+            "articleQuantity": ["2.5KG PKT x 4"],
+            "articleImage": FZ2
+          },
+          {
+            "articleNo": 4623,
+            "articleName": "GEMÜSE Blumenkohl",
+            "articleDescription": "Gobhi",
+            "articleQuantity": ["2.5KG PKT x 4"],
+            "articleImage": FZ3
+          },
+          {
+            "articleNo": 3588,
+            "articleName": "BRECHBONEN",
+            "articleDescription": "Beans or falli",
+            "articleQuantity": ["2.5KG PKT x 4"],
+            "articleImage": FZ4
+          },
+          {
+            "articleNo": 1762,
+            "articleName": "Erbsen Sehrfein",
+            "articleDescription": "matar",
+            "articleBrand": "SAFAL",
+            "articleQuantity": ["2.5KG PKT x 4"],
+            "articleImage": FZ5
+          },
+          {
+            "articleNo": 3348,
+            "articleName": "KAISERGEMÜSE",
+            "articleDescription": "mix vegetable",
+            "articleQuantity": ["2.5KG PKT x 4"],
+            "articleImage": FZ6
+          },
+          {
+            "articleNo": 3434,
+            "articleName": "Sommergemüse",
+            "articleDescription": "mix vegetable without matar and beans",
+            "articleQuantity": ["2.5KG PKT x 4"],
+            "articleImage": FZ7
+          },
+          {
+            "articleNo": 1748,
+            "articleName": " Blattspinat(Portionen)",
+            "articleQuantity": ["2,5KG"],
+            "articleImage": FZ25,
+            "articleDescription": "Palak"
+          },
+          {
+            "articleNo": 4560,
+            "articleName": " Rahmspinat (Minis IGLO)",
+            "articleQuantity": ["1,3KG"],
+            "articleImage": FZ26,
+            "articleDescription": "Palak"
+          },
+          {
+            "articleNo": 1003,
+            "articleName": "Knoblauch gehackt / Chopped",
+            "articleQuantity": ["1KG"],
+            "articleImage": FZ27
+          },
+        
+    ]},
+    {id:14, name: "Others", image: Others, items: [
         {
             articleNo: "3241",
             articleName: "SPÜL AG-462 SPÜLMITTEL",

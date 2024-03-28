@@ -1,0 +1,8 @@
+.quiz .correct{
+    border-color: #00d397;
+    background: #dffff2;
+}
+.quiz .wrong{
+    border-color: #FF4A4A;
+    background: #ffebeb;
+}

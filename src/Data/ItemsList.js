@@ -152,6 +152,7 @@ import PastaPenne from "../assets/images/italian/PastaPenne.jpeg"
 import PastaRigatoni from "../assets/images/italian/PastaRigatoni.jpeg"
 import PastaRindfleisch from "../assets/images/italian/PastaRindfleisch.jpeg"
 import PastaSemola from "../assets/images/italian/PastaSemola.jpeg"
+import PastaSemola1 from "../assets/images/italian/PastaSemola1.jpeg"
 import PastaSpaghetti from "../assets/images/italian/PastaSpaghetti.jpeg"
 import LycheesChinese from "../assets/images/chinese/LycheesChinese.png"
 import BambooChinese from "../assets/images/chinese/BambooChinese.png"
@@ -376,6 +377,7 @@ import Zeenat from "../assets/images/rice/Zeenat.jpeg"
 import IndiaGateBasmati from "../assets/images/rice/IndiaGateBasmati.jpeg"
 import SonaMassori from "../assets/images/rice/SonaMassori.jpeg"
 
+import CF1 from "../assets/images/Paste/CF1.jpeg"
 
 import Sweet2 from "../assets/images/Sweet/Sweet2.jpeg"
 import Sweet3 from "../assets/images/Sweet/Sweet3.jpeg"
@@ -555,7 +557,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: TandooriMasala,
             articleBrand: "TRS",
-            articleQuantity: ["1KG/400GM/100GM"]
+            articleQuantity: ["1KG x 6","400GM x 10","100GM x 20"]
         },
         {
             articleNo: "2649",
@@ -600,10 +602,10 @@ export const itemsList = [
         {
             articleNo: "3813",
             articleName: "DALCHINI (TRS)",
-            articleDescription: "",
+            articleDescription: "Stick",
             articleImage: Dalchini,
             articleBrand: "TRS",
-            articleQuantity: ["1.5KG/ 400GM/ 100GM"]
+            articleQuantity: ["1.5KG x 10"," 200GM x 10", "50GM x 15"]
         },
         {
             articleNo: "3883",
@@ -667,7 +669,7 @@ export const itemsList = [
             articleDescription: "Laung/ Nelken",
             articleImage: Clove,
             articleBrand: "TRS",
-            articleQuantity: ["800G/250GM"]
+            articleQuantity: ["800GM x 6","400GM x 10","250GM x 10", "50GM x 20"]
         },
         {
             articleNo: "3039",
@@ -747,7 +749,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: SesameSeedNat,
             articleBrand: "TRS",
-            articleQuantity: ["1KG/300GM/100GM"]
+            articleQuantity: ["1KG x 6","300GM x 10","100GM x 20"]
         },
         {
             articleNo: "",
@@ -1156,7 +1158,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: BEChilli,
             articleBrand: "GENA",
-            articleQuantity: ["1KG"]
+            articleQuantity: ["1KG x 6","150GM x 10", "50GM x 20",]
         },
         {
             articleNo: "",
@@ -1318,8 +1320,8 @@ export const itemsList = [
             articleName: "CHICK Peas Boiled",
             articleDescription: "",
             articleImage: ChickPeas,
-            articleBrand: "TRS, ANJU",
-            articleQuantity: ["2.5KG x 6 Packung", "800GM x 6 Packung", "400GM x 12 Pakung"]
+            articleBrand: "TRS, ANJU, Heera, Swagat",
+            articleQuantity: ["2.5KG x 6 Packung (HEERA/Swagat)", "800GM x 6 Packung", "400GM x 12 Pakung"]
         },
     ]},
     {id:3, name: "Atta", image: Atta, items: [
@@ -1353,7 +1355,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Atta4,
             articleBrand: "EDEKA/Mühlen König",
-            articleQuantity: ["1KG"]
+            articleQuantity: ["1KG x 10"]
         },
         {
             articleNo: "3361",
@@ -1468,7 +1470,7 @@ export const itemsList = [
         articleName: "Kokosmilch(AROY)",
         articleDescription: "Coconut Milk",
         articleImage: CocoMilk,
-        articleBrand: "",
+        articleBrand: "AROY/ NBH",
         articleQuantity: ["1LTR x 12"]
     },
     {
@@ -1541,7 +1543,7 @@ export const itemsList = [
         articleDescription: "Fish fry chips",
         articleImage: Kropak,
         articleBrand: "",
-        articleQuantity: ["200GM x 60", "1KG x 12"]
+        articleQuantity: ["1KG x 12"]
     },
 
 
@@ -1559,7 +1561,7 @@ export const itemsList = [
             articleNo: "4398",
             articleName: "Pasta Lasagne Di Semola Gelb ",
             articleDescription: "",
-            articleImage: PastaGelb,
+            articleImage: PastaSemola1,
             articleBrand: "",
             articleQuantity: ["5KG x 3 pakung"]
         },
@@ -1745,7 +1747,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: SarFillets,
             articleBrand: "",
-            articleQuantity: ["890GM"]
+            articleQuantity: ["890GM x 12"]
         },
         {
             articleNo: "",
@@ -1793,7 +1795,7 @@ export const itemsList = [
             articleDescription: "(Tomato Gravy)",
             articleImage: Pulpa,
             articleBrand: "Mutti, Adria",
-            articleQuantity: ["4.5KG x 3/2"]
+            articleQuantity: ["10KG"]
         },
         {
             articleNo: "",
@@ -1903,7 +1905,7 @@ export const itemsList = [
             articleDescription: "Mango",
             articleImage: LQ28,
             articleBrand: "Cheetah",
-            articleQuantity: ["1LTR x 6 flasche", "700ML x 6 flasche"]
+            articleQuantity: ["700ML x 6 flasche"]
         },
         {
             articleNo: "",
@@ -1911,7 +1913,7 @@ export const itemsList = [
             articleDescription: "Coconut",
             articleImage: LQ32,
             articleBrand: "Cheetah",
-            articleQuantity: ["1LTR x 6 flasche", "700ML x 6 flasche"]
+            articleQuantity: ["700ML x 6 flasche"]
         },
         {
             articleNo: "",
@@ -1919,7 +1921,7 @@ export const itemsList = [
             articleDescription: "Lychee",
             articleImage: LQ33,
             articleBrand: "Cheetah",
-            articleQuantity: ["1LTR x 6 flasche", "700ML x 6 flasche"]
+            articleQuantity: ["700ML x 6 flasche"]
         },
         {
             articleNo: "",
@@ -1927,7 +1929,7 @@ export const itemsList = [
             articleDescription: "Ginger",
             articleImage: LQ34,
             articleBrand: "Cheetah",
-            articleQuantity: ["1LTR x 6 flasche", "700ML x 6 flasche"]
+            articleQuantity: ["700ML x 6 flasche"]
         },
         {
             articleNo: "",
@@ -1935,7 +1937,7 @@ export const itemsList = [
             articleDescription: "Cardomom",
             articleImage: LQ35,
             articleBrand: "Cheetah",
-            articleQuantity: ["1LTR x 6 flasche", "700ML x 6 flasche"]
+            articleQuantity: ["700ML x 6 flasche"]
         },
         // --------------------------schnaps end---------------------------------
         {
@@ -2231,7 +2233,7 @@ export const itemsList = [
           {
             "articleNo": 4281,
             "articleName": "Frühlingsrollen",
-            "articleQuantity": ["60 stuk =1 carton = 10 packung"],
+            "articleQuantity": ["60 stuk =1 carton = 10 packung", ""],
             "articleImage": FZ30
           },           
           {
@@ -2298,7 +2300,7 @@ export const itemsList = [
           {
             "articleNo": 4750,
             "articleName": "SF.Hamburgerfleisch roh ungewürzt Rind",
-            "articleQuantity": ["(180gm x 28 packung","125GM x 40 packung","100GM x 50 packung"],
+            "articleQuantity": ["100GM x 50 packung"],
             "articleImage": FZ36
           },
           {
@@ -2311,13 +2313,13 @@ export const itemsList = [
             "articleNo": 5249,
             "articleName": "HÄHNCHEN Brust (Brasilien)",
             "articleQuantity": ["2KG packing , 1 carton = 12KG"],
-            "articleImage": FZ16
+            "articleImage": FZ17
           },
           {
             "articleNo": 3608,
             "articleName": "HÄHNCHEN Brust (Thailand)",
             "articleQuantity": ["2KG packing , 1 carton = 12KG"],
-            "articleImage": FZ17
+            "articleImage": FZ16
           },
           {
             "articleNo": 3201,
@@ -3026,7 +3028,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Plastic9,
             articleBrand: "",
-            articleQuantity: ["1000STK"]
+            articleQuantity: ["1000STK = 1 carton", "1 stange = 100 stk"]
         },
         // --------------------fresh folie-----------------------
         {
@@ -3061,16 +3063,7 @@ export const itemsList = [
             articleImage: Flasche1,
             articleBrand: "",
             articleQuantity: ["1LTR", "1 carton = 74 flasche"]
-        },
-        {
-            articleNo: "",
-            articleName: "Frühlingsrollenbeutel",
-            articleDescription: "used for fruhling rolls",
-            articleImage: FR1,
-            articleBrand: "",
-            articleQuantity: ["1 carton = 1000 stuk", "1 stange = 100 stuk"]
-        },
-    
+        },    
     ]},
     {id:10, name: "Kase & Paste", image: Paste, items: [
         {
@@ -3090,20 +3083,28 @@ export const itemsList = [
             articleQuantity: ["1LTR x 12 packung"]
         },
         {
-            articleNo: "4436",
-            articleName: "Sahne H-Küchensahne 20% (ED)",
-            articleDescription: "",
-            articleImage: Paste3,
-            articleBrand: "",
-            articleQuantity: ["1LTR x 12 packung"]
-        },
-        {
             articleNo: "5192",
             articleName: "Sahne H-Küchensahne 15% MILRAM",
             articleDescription: "",
             articleImage: Paste4,
             articleBrand: "",
             articleQuantity: ["1LTR x 12 packung"]
+        },
+        {
+            articleNo: "4436",
+            articleName: "Sahne H-Küchensahne 20% (ED)",
+            articleDescription: "",
+            articleImage: Paste14,
+            articleBrand: "",
+            articleQuantity: ["1LTR x 12"]
+        },
+        {
+            articleNo: "5193",
+            articleName: "MILRAM SAHNE KÜCHESAHNE 20%",
+            articleDescription: "",
+            articleImage: Paste15,
+            articleBrand: "",
+            articleQuantity: ["1LTR x 12"]
         },
         {
             articleNo: "4684",
@@ -3164,22 +3165,7 @@ export const itemsList = [
         },
         
         
-        {
-            articleNo: "4436",
-            articleName: "Sahne H-Küchensahne 20% (ED)",
-            articleDescription: "",
-            articleImage: Paste14,
-            articleBrand: "",
-            articleQuantity: ["1LTR"]
-        },
-        {
-            articleNo: "5193",
-            articleName: "MILRAM SAHNE KÜCHESAHNE 20%",
-            articleDescription: "",
-            articleImage: Paste15,
-            articleBrand: "",
-            articleQuantity: ["1LTR"]
-        },
+        
         {
             articleNo: "1673",
             articleName: "MILRAM SAHNE KÜCHESAHNE 30%",
@@ -3296,6 +3282,14 @@ export const itemsList = [
         },
         {
             articleNo: "",
+            articleName: "Corn Flour Soups",
+            articleDescription: "",
+            articleImage: CF1,
+            articleBrand: "HEERA",
+            articleQuantity: ["500GM x 12"]
+        },
+        {
+            articleNo: "",
             articleName: "Ketchup",
             articleDescription: "",
             articleImage: KetchupB,
@@ -3317,7 +3311,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Mango1,
             articleBrand: "ANJU",
-            articleQuantity: ["850GM"]
+            articleQuantity: ["850GM x 12"]
         },
         {
             articleNo: "3477",
@@ -3325,7 +3319,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Mango2,
             articleBrand: "RASANAND",
-            articleQuantity: ["850GM"]
+            articleQuantity: ["850GM x 12"]
         },
         {
             articleNo: "497",
@@ -3333,7 +3327,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Mango3,
             articleBrand: "ANJU",
-            articleQuantity: ["850GM"]
+            articleQuantity: ["850GM x 12"]
         },
         {
             articleNo: "3476",
@@ -3341,15 +3335,15 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Mango4,
             articleBrand: "RASANAND",
-            articleQuantity: ["3.1KG"]
+            articleQuantity: ["3.1KG x 3"]
         },
         {
             articleNo: "491",
             articleName: "Mango Chutney",
             articleDescription: "",
             articleImage: Mango5,
-            articleBrand: "",
-            articleQuantity: ["5KG"]
+            articleBrand: "RASANAND",
+            articleQuantity: ["5KG x 4"]
         },
         {
             articleNo: "5135",
@@ -3513,7 +3507,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Paste10,
             articleBrand: "",
-            articleQuantity: ["5KG"]
+            articleQuantity: ["5KG x 4"]
         },
         {
             articleNo: "1701",
@@ -3521,7 +3515,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Paste11,
             articleBrand: "",
-            articleQuantity: ["3.63KG"]
+            articleQuantity: ["3.63KG x 6"]
         },
         
     ]},
@@ -3602,6 +3596,13 @@ export const itemsList = [
             "articleQuantity": ["1KG"],
             "articleImage": FZ27
           },
+          {
+            "articleNo": "",
+            "articleName": "Okra Cut",
+            "articleDescription": "Frozen Bhindi",
+            "articleQuantity": ["425GM x 24 packung"],
+            "articleImage": FS12
+          },
         //   ----------------fesh veg----------------------------
           {
             "articleNo": "",
@@ -3628,28 +3629,28 @@ export const itemsList = [
             "articleNo": "",
             "articleName": "Kurbis",
             "articleDescription": "Gheeya/loki",
-            "articleQuantity": [],
+            "articleQuantity": ["7KG"],
             "articleImage": FS4
           },
           {
             "articleNo": "",
             "articleName": "Gurken",
             "articleDescription": "Kheera",
-            "articleQuantity": [],
+            "articleQuantity": ["10 to 14 stk"],
             "articleImage": FS5
           },
           {
             "articleNo": "",
             "articleName": "Bitter Gourd",
             "articleDescription": "karela",
-            "articleQuantity": [],
+            "articleQuantity": ["6 to 7KG"],
             "articleImage": FS6
           },
           {
             "articleNo": "",
             "articleName": "Champigion Karton",
             "articleDescription": "Mushroom",
-            "articleQuantity": ["25KG"],
+            "articleQuantity": [],
             "articleImage": FS7
           },
           {
@@ -3663,49 +3664,43 @@ export const itemsList = [
             "articleNo": "",
             "articleName": "Karotten",
             "articleDescription": "Carrot",
-            "articleQuantity": [],
+            "articleQuantity": ["10KG"],
             "articleImage": FS9
           },
           {
             "articleNo": "",
             "articleName": "Aubergine",
             "articleDescription": "Baigan/ Brinjal",
-            "articleQuantity": ["25KG"],
+            "articleQuantity": [],
             "articleImage": FS10
           },
           {
             "articleNo": "",
             "articleName": "Arum",
             "articleDescription": "Arbi",
-            "articleQuantity": ["25KG"],
+            "articleQuantity": [],
             "articleImage": FS11
           },
+          
           {
             "articleNo": "",
-            "articleName": "Okra Cut",
-            "articleDescription": "Frozen Bhindi",
-            "articleQuantity": ["425GM x 24 packung"],
-            "articleImage": FS12
-          },
-          {
-            "articleNo": "",
-            "articleName": "Okra Cut",
+            "articleName": "Okra",
             "articleDescription": "Fresh Bhindi",
-            "articleQuantity": [],
+            "articleQuantity": ["4 to 6KG"],
             "articleImage": FS14
           },
           {
             "articleNo": "",
             "articleName": "Ingwer ",
             "articleDescription": "Ginger/ Adrak",
-            "articleQuantity": [],
+            "articleQuantity": ["12 to 13 KG"],
             "articleImage": FS13
           },
           {
             "articleNo": "",
             "articleName": "Zucchini",
             "articleDescription": "torri",
-            "articleQuantity": [],
+            "articleQuantity": ["5 to 7 KG"],
             "articleImage": FS15
           },
         
@@ -3751,7 +3746,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Sweet2,
             articleBrand: "Dairy Valley",
-            articleQuantity: ["300GM"]
+            articleQuantity: ["300GM x 12"]
         },
         {
             articleNo: "3772",
@@ -3759,7 +3754,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Sweet3,
             articleBrand: "Dairy Valley",
-            articleQuantity: ["1KG"]
+            articleQuantity: ["1KG x 6"]
         },
         {
             articleNo: "4689",
@@ -3767,7 +3762,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Sweet4,
             articleBrand: "Dairy Valley",
-            articleQuantity: ["500GM"]
+            articleQuantity: ["500GM x 12"]
         },
         {
             articleNo: "4795",
@@ -3775,7 +3770,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Sweet5,
             articleBrand: "Dairy Valley",
-            articleQuantity: ["1KG"]
+            articleQuantity: ["1KG x 6"]
         },
         {
             articleNo: "4261",
@@ -3783,7 +3778,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: Sweet6,
             articleBrand: "Dairy Valley",
-            articleQuantity: ["1KG"]
+            articleQuantity: ["1KG x 6"]
         },
     
     ]},

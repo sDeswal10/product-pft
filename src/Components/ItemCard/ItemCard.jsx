@@ -10,7 +10,7 @@ const ItemCard = ({
 }) => {
   return (
     <div className="flex flex-col border border-gray-200 p-5 shadow-lg w-80">
-      <div className="w-70 h-64">
+      <div className="md:w-70 md:h-64">
         <img
           src={articleImage}
           alt={articleName}

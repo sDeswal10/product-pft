@@ -1466,13 +1466,14 @@ export const itemsList = [
         articleQuantity: ["2.7KG x 6"]
     },
     {
-        articleNo: "3051",
-        articleName: "Kokosmilch(AROY)",
-        articleDescription: "Coconut Milk",
-        articleImage: CocoMilk,
-        articleBrand: "AROY/ NBH",
-        articleQuantity: ["1LTR x 12"]
+        articleNo: "2327",
+        articleName: "Hoi Sin Sauce (Amoy)",
+        articleDescription: "",
+        articleImage: HoisinSauce,
+        articleBrand: "",
+        articleQuantity: ["2.27KG x 6"]
     },
+    
     {
         articleNo: "2197",
         articleName: "Thai Curry ROT Thailand",
@@ -1513,14 +1514,7 @@ export const itemsList = [
         articleBrand: "",
         articleQuantity: ["500ML x 24"]
     },
-    {
-        articleNo: "2327",
-        articleName: "Hoi Sin Sauce (Amoy)",
-        articleDescription: "",
-        articleImage: HoisinSauce,
-        articleBrand: "",
-        articleQuantity: ["2.27KG x 6"]
-    },
+    
     {
         articleNo: "NA",
         articleName: "Lychees Narsisuss",
@@ -1544,6 +1538,14 @@ export const itemsList = [
         articleImage: Kropak,
         articleBrand: "",
         articleQuantity: ["1KG x 12"]
+    },
+    {
+        articleNo: "3051",
+        articleName: "Kokosmilch(AROY)",
+        articleDescription: "Coconut Milk",
+        articleImage: CocoMilk,
+        articleBrand: "AROY/ NBH",
+        articleQuantity: ["1LTR x 12"]
     },
 
 
@@ -3107,6 +3109,14 @@ export const itemsList = [
             articleQuantity: ["1LTR x 12"]
         },
         {
+            articleNo: "1673",
+            articleName: "MILRAM SAHNE KÜCHESAHNE 30%",
+            articleDescription: "",
+            articleImage: Paste16,
+            articleBrand: "MILAM",
+            articleQuantity: ["1LTR x 12"]
+        },
+        {
             articleNo: "4684",
             articleName: "MILRAM JOGURT 3.5%",
             articleDescription: "",
@@ -3164,16 +3174,6 @@ export const itemsList = [
             articleQuantity: ["2-4KG"]
         },
         
-        
-        
-        {
-            articleNo: "1673",
-            articleName: "MILRAM SAHNE KÜCHESAHNE 30%",
-            articleDescription: "",
-            articleImage: Paste16,
-            articleBrand: "",
-            articleQuantity: ["1LTR"]
-        },
         {
             articleNo: "1661",
             articleName: "Gorgonzolla ISOLA Fresco 48% ",
@@ -3185,11 +3185,19 @@ export const itemsList = [
         
         {
             articleNo: "5069",
-            articleName: "Rindersalami Geschnitten",
+            articleName: "Gouda and Mozzarella 43%",
             articleDescription: "",
             articleImage: Paste19,
             articleBrand: "",
-            articleQuantity: ["1KG"]
+            articleQuantity: ["2KG"]
+        },
+        {
+            articleNo: "3745",
+            articleName: "Käse Paneer (Dairy Velley) Indian Cheese ",
+            articleDescription: "",
+            articleImage: Sweet1,
+            articleBrand: "Dairy Valley",
+            articleQuantity: ["1KG/500GM"]
         },
         {
             articleNo: "1665",
@@ -3231,30 +3239,8 @@ export const itemsList = [
             articleBrand: "",
             articleQuantity: ["1.3KG/900GM"]
         },
-        {
-            articleNo: "3421",
-            articleName: "Mayonnaise Salatsauce",
-            articleDescription: "",
-            articleImage: Paste25,
-            articleBrand: "",
-            articleQuantity: ["10KG"]
-        },
-        {
-            articleNo: "",
-            articleName: "Mayonnaise in Beutel",
-            articleDescription: "",
-            articleImage: MayoB,
-            articleBrand: "",
-            articleQuantity: ["15ml x 150 packung", "20ml x 100 packung"]
-        },
-        {
-            articleNo: "3745",
-            articleName: "Käse Paneer (Dairy Velley) Indian Cheese ",
-            articleDescription: "",
-            articleImage: Sweet1,
-            articleBrand: "Dairy Valley",
-            articleQuantity: ["1KG/500GM"]
-        },
+        
+        
         
         {
             articleNo: "",
@@ -3304,6 +3290,23 @@ export const itemsList = [
             articleBrand: "Knorr",
             articleQuantity: ["15ml x 150 packung", "20ml x 100 packung"]
         },
+        {
+            articleNo: "3421",
+            articleName: "Mayonnaise Salatsauce",
+            articleDescription: "",
+            articleImage: Paste25,
+            articleBrand: "",
+            articleQuantity: ["10KG"]
+        },
+        {
+            articleNo: "",
+            articleName: "Mayonnaise in Beutel",
+            articleDescription: "",
+            articleImage: MayoB,
+            articleBrand: "",
+            articleQuantity: ["15ml x 150 packung", "20ml x 100 packung"]
+        },
+
         // ------------------mango and other------------------------
         {
             articleNo: "499",

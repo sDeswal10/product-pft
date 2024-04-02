@@ -4,8 +4,24 @@ import Header from './Components/Header/Header';
 import Items from './Pages/Items/Items';
 import { AppContext } from './Context/ContextApi';
 import Quiz from './Pages/Quiz/Quiz';
+import Login from './Pages/Login/Login';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [token, setToken] = useState(false)
+
+  if(token){
+    localStorage.setItem('token',JSON.stringify(token))
+  }
+
+  useEffect(() => {
+    if(localStorage.getItem('token')){
+      let data = JSON.parse(localStorage.getItem('token'))
+      setToken(data)
+    }
+    
+  }, [])
+  
   return (
     <AppContext>
     <BrowserRouter>
@@ -13,7 +29,10 @@ function App() {
       <Routes>
         <Route path='/' exact element={<Home/>}/>
         <Route path='/product/:id' element={<Items/>}/>
-        <Route path='/quiz' element={<Quiz/>}/>
+        <Route path='/login' element={<Login setToken={setToken}/>}/>
+        {token ? <Route path='/quiz' element={<Quiz/>}/> : ""}
+        
+        
       </Routes>
     </BrowserRouter>
     </AppContext>   

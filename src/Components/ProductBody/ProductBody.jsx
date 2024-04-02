@@ -7,7 +7,7 @@ const ProductBody = () => {
   
   return (
     <div>
-      {/* <Search data={itemsList}/> */}
+      <Search />
       <div className="flex flex-row items-center justify-between flex-wrap gap-10">
         {itemsList?.map((product, i) => (
           <ProductCard

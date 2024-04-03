@@ -9,14 +9,6 @@ const Login = ({ setToken }) => {
   });
   const navigate = useNavigate();
 
-  function handleChange(event) {
-    setFormData((prevFormData) => {
-      return {
-        ...prevFormData,
-        [event.target.name]: event.target.value,
-      };
-    });
-  }
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -28,7 +20,6 @@ const Login = ({ setToken }) => {
       });
 
       if (error) throw error;
-      console.log(data);
       setToken(data);
       navigate("/quiz");
 
@@ -46,13 +37,13 @@ const Login = ({ setToken }) => {
             type="text"
             placeholder="Enter your email"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 my-4"
-            onChange={handleChange}
+            onChange={(e)=>setFormData({email: e.target.value, password: formData.password})}
           />
           <input
             type="text"
             placeholder="Enter your password"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 my-4"
-            onChange={handleChange}
+            onChange={(e)=>setFormData({email: formData.email, password: e.target.value})}
           />
           <button
             type="submit"

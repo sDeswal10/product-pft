@@ -4,7 +4,7 @@ import ItemCard from "../ItemCard/ItemCard";
 
 const Search = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [filtered, setFiltered] = useState();
+  const [filtered, setFiltered] = useState([]);
 
   const handleSearchChange = (e) => {
     e.preventDefault();
@@ -19,8 +19,8 @@ const Search = () => {
         }
       });
     });
-
     setFiltered(result);
+
   };
   return (
     <>

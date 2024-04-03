@@ -6,6 +6,7 @@ import { AppContext } from './Context/ContextApi';
 import Quiz from './Pages/Quiz/Quiz';
 import Login from './Pages/Login/Login';
 import { useEffect, useState } from 'react';
+import QuizHome from './Pages/Quiz/QuizHome';
 
 function App() {
   const [token, setToken] = useState(false)
@@ -30,7 +31,8 @@ function App() {
         <Route path='/' exact element={<Home/>}/>
         <Route path='/product/:id' element={<Items/>}/>
         <Route path='/login' element={<Login setToken={setToken}/>}/>
-        {token ? <Route path='/quiz' element={<Quiz/>}/> : ""}
+        {token ? <Route path='/quiz' element={<QuizHome/>}/> : ""}
+        <Route path='/test/:quizNo' element={<Quiz/>}/>
         
         
       </Routes>

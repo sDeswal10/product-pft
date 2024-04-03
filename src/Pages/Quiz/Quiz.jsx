@@ -1,13 +1,17 @@
 import React, { useRef, useState } from "react";
-import { quiz } from "../../Data/Quiz";
+import { quizzes } from "../../Data/Quiz";
 import "./quiz.css";
+import { useParams } from "react-router-dom";
 
 const Quiz = () => {
   let [index, setIndex] = useState(0);
-  let [question, setQuestion] = useState(quiz[index]);
+  let {quizNo} = useParams();
+  let [quizNumber, setQuizNumber] = useState(quizzes[quizNo])
+  let [question, setQuestion] = useState(quizNumber.questions[index]);
   let [lock, setLock] = useState(false);
   let [score, setScore] = useState(0);
   let [result, setResult] = useState(false);
+  console.log(question)
 
   let Option1 = useRef(null);
   let Option2 = useRef(null);
@@ -30,12 +34,12 @@ const Quiz = () => {
   };
   const nextQue = () => {
     if (lock === true) {
-      if (index === quiz.length - 1) {
+      if (index === quizzes[quizNo].questions.length - 1) {
         setResult(true);
         return 0;
       }
       setIndex(++index);
-      setQuestion(quiz[index]);
+      setQuestion(quizzes[quizNo].questions[index]);
       setLock(false);
       option_array?.map((option) => {
         option.current.classList.remove("correct");
@@ -52,13 +56,13 @@ const Quiz = () => {
         <hr className="h-1 border-none bg-[#707070]" />
         {result ? (
           <>
-            <h2>You Scored {score} out of {quiz.length}</h2>
+            <h2>You Scored {score} out of {quizzes[quizNo].questions.length}</h2>
         <button className="btn mx-auto w-64 h-14 bg-[#553f9a] text-white text-2xl font-semibold rounded-lg cursor-pointer">Submit</button>
           </>
         ) : (
           <>
             <h2>
-              {index + 1}. {question.question}
+              {index + 1}. {question?.question}
             </h2>
             <ul>
               <li
@@ -68,7 +72,7 @@ const Quiz = () => {
                   checkAns(e, 1);
                 }}
               >
-                {question.options1}
+                {question?.options1}
               </li>
               <li
                 ref={Option2}
@@ -77,7 +81,7 @@ const Quiz = () => {
                   checkAns(e, 2);
                 }}
               >
-                {question.options2}
+                {question?.options2}
               </li>
               <li
                 ref={Option3}
@@ -86,7 +90,7 @@ const Quiz = () => {
                   checkAns(e, 3);
                 }}
               >
-                {question.options3}
+                {question?.options3}
               </li>
               <li
                 ref={Option4}
@@ -95,7 +99,7 @@ const Quiz = () => {
                   checkAns(e, 4);
                 }}
               >
-                {question.options4}
+                {question?.options4}
               </li>
             </ul>
             <button
@@ -105,7 +109,7 @@ const Quiz = () => {
               Next
             </button>
             <div className="mx-auto text-xl">
-              {index + 1} of {quiz.length} questions
+              {index + 1} of {quizzes[quizNo]?.questions.length} questions
             </div>
           </>
         )}

@@ -1657,7 +1657,7 @@ export const itemsList = [
         },
         {
             articleNo: "",
-            articleName: "Grune(Green) Oliven Ohne Stein(seed)",
+            articleName: "Grune(Green) Oliven Mit Stein(seed)",
             articleDescription: "",
             articleImage: OlivenSeed,
             articleBrand: "Adria, La-perla",
@@ -3256,7 +3256,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: GamuseBruveBig,
             articleBrand: "Knorr",
-            articleQuantity: ["5KG"]
+            articleQuantity: ["1KG"]
         },
         {
             articleNo: "",
@@ -3264,7 +3264,7 @@ export const itemsList = [
             articleDescription: "",
             articleImage: GamuzeBruve,
             articleBrand: "Knorr",
-            articleQuantity: ["1KG"]
+            articleQuantity: ["12KG", "1KG"]
         },
         {
             articleNo: "",

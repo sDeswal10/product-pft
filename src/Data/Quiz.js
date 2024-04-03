@@ -1,6 +1,6 @@
 export const quizzes = [
   {
-    title: "Quiz 1",
+    title: "Mix Quiz 1",
     id: 0,
     questions: [
       {
@@ -70,7 +70,7 @@ export const quizzes = [
     ]
   },
     {
-      title: "Quiz 2",
+      title: "Mix Quiz 2",
       id: 1,
       questions: [
         {
@@ -140,7 +140,7 @@ export const quizzes = [
       ]
     },
     {
-      title: "Quiz 3",
+      title: "Mix Quiz 3",
       id: 2,
       questions: [
         {
@@ -261,15 +261,6 @@ export const quizzes = [
           options4: "1kg, 2kg, 3kg",
           ans: 1,
         },
-        {
-          question: `How many types of rice we have?`,
-          options1: "2",
-          options2: "3",
-          options3: "1",
-          options4: "4",
-          ans: 2,
-        },
-
       ]
     },
     {
@@ -308,30 +299,40 @@ export const quizzes = [
           options4: "Kropoek",
           ans: 4,
         },
-        {
-          question: `Best Quality Rice?`,
-          options1: "Tilda Basmati",
-          options2: "Guard Basmati",
-          options3: "Ranjha Basmati",
-          options4: "Laila Basmati",
-          ans: 2,
+        
+	{
+          question: `How many dose in one carton of 1kg. Thai Curry Rot?`,
+          options1: "11",
+          options2: "13",
+          options3: "12",
+          options4: "10",
+          ans: 3,
         },
-        {
-          question: `How Many types of Lamm we have?`,
-          options1: "5",
-          options2: "4",
-          options3: "3",
-          options4: "2",
-          ans: 1,
+	{
+          question: `Choose the size of oister sauce.`,
+          options1: "2.23 ltr",
+          options2: "2.24 ltr",
+          options3: "2.37 ltr",
+          options4: "2.27 ltr",
+          ans: 3,
         },
-        {
-          question: `How many types spinat of we have?`,
-          options1: "2",
-          options2: "3",
-          options3: "1",
-          options4: "4",
-          ans: 1,
+	{
+          question: `Choose the size of oyster sauce.`,
+          options1: "2.23 ltr",
+          options2: "2.24 ltr",
+          options3: "2.37 ltr",
+          options4: "2.27 ltr",
+          ans: 3,
         },
+{
+          question: `Name of dragon flour.`,
+          options1: "Self raising flour",
+          options2: "Almond flakes",
+          options3: "Maida",
+          options4: "Besan",
+          ans: 3,
+        },
+        
 
       ]
     },
@@ -347,6 +348,14 @@ export const quizzes = [
           options4: "Lamm Legs",
           ans: 1,
         },
+{
+          question: `How Many types of Lamm we have?`,
+          options1: "5",
+          options2: "4",
+          options3: "3",
+          options4: "2",
+          ans: 1,
+        },
         {
           question: `What is the carton Packing of RindRoberschale?`,
           options1: "10-12 kg",
@@ -355,14 +364,7 @@ export const quizzes = [
           options4: "4-5 kg",
           ans: 3,
         },
-        {
-          question: `How many dose in one carton of 1kg. Thai Curry Rot?`,
-          options1: "11",
-          options2: "13",
-          options3: "12",
-          options4: "10",
-          ans: 3,
-        },
+        
         {
           question: `Turtan Halal Sinken Percentage?`,
           options1: "85 , 57",
@@ -371,30 +373,15 @@ export const quizzes = [
           options4: "4, 5",
           ans: 1,
         },
-        {
-          question: `Alternate name of Haldi?`,
-          options1: "Kurkuma",
-          options2: "Garam Masala",
-          options3: "Tandoori Masala",
-          options4: "Jeera Powder",
+{
+          question: `alternate name of botti?`,
+          options1: "Lamm Luchs",
+          options2: "lamm fillets",
+          options3: "hanchen",
+          options4: "Ente",
           ans: 1,
         },
-        {
-          question: `Choose the Other name for rosinen?`,
-          options1: "Kismiss",
-          options2: "French Fries",
-          options3: "Pomas",
-          options4: "Clove",
-          ans: 1,
-        },
-        {
-          question: `What is the quantity of PG tips loose tea?`,
-          options1: "500 gm",
-          options2: "1 kg",
-          options3: "1.5 kg",
-          options4: "2.5 kg",
-          ans: 3,
-        },
+        
 
       ]
     },
@@ -408,6 +395,188 @@ export const quizzes = [
           options2: "2 kg",
           options3: "5 kg",
           options4: "10 kg",
+          ans: 1,
+        },
+        {
+          question: `How many types of Fresh onion we have?`,
+          options1: "5",
+          options2: "4",
+          options3: "2",
+          options4: "1",
+          ans: 3,
+        },
+        {
+          question: `What is the Quantity of Frozen ocra cut?`,
+          options1: "325 gm",
+          options2: "425 gm",
+          options3: "525 gm",
+          options4: "600 gm",
+          ans: 2,
+        },
+        {
+          question: `Name of Karela in English?`,
+          options1: "Lamm",
+          options2: "Brack Bohnen",
+          options3: "Bitter guard",
+          options4: "Shwarge",
+          ans: 3,
+        },
+        
+        {
+          question: `How many types of sahne we have?`,
+          options1: "3",
+          options2: "4",
+          options3: "5",
+          options4: "2",
+          ans: 1,
+        },
+
+      ]
+    },
+    {
+      title: "Quiz 8",
+      id: 7,
+      questions: [
+        {
+          question: `What is the fat percentage in H.Milch?`,
+          options1: "10%",
+          options2: "4%",
+          options3: "3.5%",
+          options4: "4.5%",
+          ans: 1,
+        },
+        {
+          question: `Which packing for Naan & Chapati?`,
+          options1: "Alufolio",
+          options2: "R28",
+          options3: "R844",
+          options4: "R819",
+          ans: 3,
+        },
+        {
+          question: `How many types of Tandoors we have?`,
+          options1: "2",
+          options2: "3",
+          options3: "4",
+          options4: "5",
+          ans: 2,
+        },
+        {
+          question: `Biggest size of Zhinga?`,
+          options1: "8-12",
+          options2: "6-8",
+          options3: "13-17",
+          options4: "Oo five",
+          ans: 3,
+        },
+        {
+          question: `How many types of Samosas in crown brand we have?`,
+          options1: "2",
+          options2: "4",
+          options3: "3",
+          options4: "1",
+          ans: 1,
+        },
+        {
+          question: `How Many Nuggets we have?`,
+          options1: "2",
+          options2: "3",
+          options3: "1",
+          options4: "4",
+          ans: 1,
+        },
+        {
+          question: `How many types of Calzones packing we have?`,
+          options1: "2",
+          options2: "1",
+          options3: "4",
+          options4: "3",
+          ans: 1,
+        },
+        {
+          question: `What is the size of Family packing?`,
+          options1: "60x40x5",
+          options2: "60x40x4",
+          options3: "50x50x5",
+          options4: "49x33x4",
+          ans: 1,
+        },
+        {
+          question: `What is the size of dinner packing in aluschale?`,
+          options1: "R808",
+          options2: "R880",
+          options3: "R819",
+          options4: "R879",
+          ans: 1,
+        },
+        {
+          question: `Which aluschale have 2 types of dekel?`,
+          options1: "R808",
+          options2: "R880",
+          options3: "R819",
+          options4: "R879",
+          ans: 1,
+        },
+        {
+          question: `Most selling seagle schale we have?`,
+          options1: "603",
+          options2: "613",
+          options3: "611",
+          options4: "609",
+          ans: 1,
+        },
+        {
+          question: `How many packings in IP4?`,
+          options1: "3",
+          options2: "2",
+          options3: "1",
+          options4: "4",
+          ans: 1,
+        },
+        {
+          question: `Which packing we use for Klien Burger?`,
+          options1: "1509",
+          options2: "1453",
+          options3: "1512",
+          options4: "1637",
+          ans: 1,
+        },
+        {
+          question: `how many stuks in 1 stanga of FC16?`,
+          options1: "50",
+          options2: "600",
+          options3: "1000",
+          options4: "100",
+          ans: 1,
+        },
+        {
+          question: `How many types of 250ml packing we have?`,
+          options1: "4",
+          options2: "3",
+          options3: "5",
+          options4: "2",
+          ans: 1,
+        },
+        {
+          question: `What is the other name of napkin?`,
+          options1: "Tuten",
+          options2: "Allu folio",
+          options3: "Serviette",
+          options4: "Mullsacke",
+          ans: 1,
+        },
+      ]
+    },
+    {
+      title: "Quiz 9",
+      id: 8,
+      questions: [
+        {
+          question: `What is the alternate name of Frutti di Mari?`,
+          options1: "Meerefructe",
+          options2: "Pommes",
+          options3: "French Fries",
+          options4: "Mullsacke",
           ans: 1,
         },
         {
@@ -450,15 +619,156 @@ export const quizzes = [
           options4: "Pommes",
           ans: 1,
         },
-        {
-          question: `How many types of sahne we have?`,
-          options1: "3",
-          options2: "4",
-          options3: "5",
-          options4: "2",
-          ans: 1,
-        },
-
+        
       ]
     },
+{
+      title: "Quiz 10",
+      id: 9,
+      questions: [
+        {
+          question: `How many types of oliven we have?`,
+          options1: "2",
+          options2: "3",
+          options3: "4",
+          options4: "5",
+          ans: 1,
+        },
+        {
+          question: `Alternate name for Kapern?`,
+          options1: "Surfines",
+          options2: "Gamuse mise",
+          options3: "Chilli",
+          options4: "Pommes",
+          ans: 1,
+        },
+        {
+          question: `How Many thunfish we have?`,
+          options1: "3",
+          options2: "4",
+          options3: "2",
+          options4: "1",
+          ans: 2,
+        },
+        {
+          question: `Size of pelati?`,
+          options1: "2550 ml",
+          options2: "2650 ml",
+          options3: "2750 ml",
+          options4: "2270 ml",
+          ans: 3,
+        },
+        {
+          question: `Tell me the brands of Pizza sauces?`,
+          options1: "Adria, Mutti, Dona Rosa",
+          options2: "Mutti, La rosino, La Perla",
+          options3: "Mutti, Sacra, La perla",
+          options4: "Divella, Sacra, La Perla",
+          ans: 1,
+        },
+{
+          question: `What type of Peproni sharf Grun Packing?`,
+          options1: "Jar",
+          options2: "Flasse",
+          options3: "Kanister",
+          options4: "Packung",
+          ans: 1,
+        },
+      ]
+    },
+{
+      title: "Quiz 11",
+      id: 10,
+      questions: [
+        {
+          question: `Alternate name of Kartofal.`,
+          options1: "Poteto",
+          options2: "tometo",
+          options3: "Onion",
+          options4: "Gobhi",
+          ans: 1,
+        },
+        {
+          question: `what is Brech bohnen ?`,
+          options1: "Onion",
+          options2: "tomato",
+          options3: "sem ki fali",
+          options4: "Bhindi",
+          ans: 1,
+        },
+        {
+          question: `Sabji in german?`,
+          options1: "Kapern",
+          options2: "Gamuse",
+          options3: "bamboos",
+          options4: "Bruve",
+          ans: 2,
+        },
+        {
+          question: `Ingwer in other words?`,
+          options1: "Ginger",
+          options2: "knobloch",
+          options3: "Bhindi",
+          options4: "gobhi",
+          ans: 3,
+        },
+      ]
+    },
+{
+      title: "Quiz 12",
+      id: 11,
+      questions: [
+        {
+          question: `Best Quality Rice?`,
+          options1: "Tilda Basmati",
+          options2: "Guard Basmati",
+          options3: "Ranjha Basmati",
+          options4: "Laila Basmati",
+          ans: 2,
+        },
+{
+          question: `How many types of rice we have?`,
+          options1: "2",
+          options2: "3",
+          options3: "1",
+          options4: "4",
+          ans: 2,
+        },
+
+
+{
+          question: `How many types spinat of we have?`,
+          options1: "2",
+          options2: "3",
+          options3: "1",
+          options4: "4",
+          ans: 1,
+        },
+{
+          question: `Alternate name of Haldi?`,
+          options1: "Kurkuma",
+          options2: "Garam Masala",
+          options3: "Tandoori Masala",
+          options4: "Jeera Powder",
+          ans: 1,
+        },
+        {
+          question: `Choose the Other name for rosinen?`,
+          options1: "Kismiss",
+          options2: "French Fries",
+          options3: "Pomas",
+          options4: "Clove",
+          ans: 1,
+        },
+        {
+          question: `What is the quantity of PG tips loose tea?`,
+          options1: "500 gm",
+          options2: "1 kg",
+          options3: "1.5 kg",
+          options4: "2.5 kg",
+          ans: 3,
+        },
+        ]
+    },
+
   ];

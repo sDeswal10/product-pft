@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { quizzes } from "../../Data/Quiz";
 import "./quiz.css";
 import { useParams } from "react-router-dom";
@@ -11,7 +11,7 @@ const Quiz = () => {
   let [lock, setLock] = useState(false);
   let [score, setScore] = useState(0);
   let [result, setResult] = useState(false);
-  console.log(question)
+
 
   let Option1 = useRef(null);
   let Option2 = useRef(null);
@@ -19,6 +19,22 @@ const Quiz = () => {
   let Option4 = useRef(null);
   let option_array = [Option1, Option2, Option3, Option4];
 
+  const randomNumber = (r,o)=>{
+    let arr = []
+  for (let i = 1; i <= r; i++) {
+    arr.push(i)
+  }
+  let result = [];
+  for (let i = 1; i <= o; i++) {
+    const random = Math.floor(Math.random() * (r - i));
+    result.push(arr[random]);
+    arr[random] = arr[r - i];
+  }
+
+  return result;
+  }
+  console.log(randomNumber(8,1))
+  // setIndex(randomNumber(8,1))
   const checkAns = (e, ans) => {
     if (lock === false) {
       if (question.ans === ans) {
@@ -32,6 +48,8 @@ const Quiz = () => {
       }
     }
   };
+
+
   const nextQue = () => {
     if (lock === true) {
       if (index === quizzes[quizNo].questions.length - 1) {
@@ -40,6 +58,7 @@ const Quiz = () => {
       }
       setIndex(++index);
       setQuestion(quizzes[quizNo].questions[index]);
+
       setLock(false);
       option_array?.map((option) => {
         option.current.classList.remove("correct");

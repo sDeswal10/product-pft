@@ -27,7 +27,7 @@ const Header = () => {
     </Link>
     <span>
     
-      <span className='text-gray-800 font-semibold mx-4'>{loggedIn ? user?.user?.email :<Link to="/login">Login</Link>}</span>
+      <span className='text-gray-800 font-semibold mx-4'>{loggedIn ? <Link to="/quiz">{user?.user?.email}</Link> :<Link to="/login">Login</Link>}</span>
     {loggedIn ? <span onClick={logoutUser} className='text-gray-800 font-semibold cursor-pointer'>Logout</span> : ""}
     </span>
     

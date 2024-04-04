@@ -2057,7 +2057,7 @@ export const itemsList = [
         // ----------------------new------------------------------------
         {
             articleNo: "2042",
-            articleName: "Bier Augustiner HELL",
+            articleName: "Bier Augustiner HELLES",
             articleDescription: "",
             articleImage: LQ23,
             articleBrand: "",

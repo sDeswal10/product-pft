@@ -1,13 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
 import { quizzes } from "../../Data/Quiz";
 import "./quiz.css";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { supabase } from "../../Client/Client";
 
 const Quiz = () => {
   let [index, setIndex] = useState(0);
+  const navigate = useNavigate()
   let {quizNo} = useParams();
   let [quizNumber, setQuizNumber] = useState(quizzes[quizNo])
-  let [question, setQuestion] = useState(quizNumber.questions[index]);
+  let [randomQueNo, setRandomQueNo] = useState(0);
+  let [question, setQuestion] = useState(quizNumber.questions[randomQueNo]);
   let [lock, setLock] = useState(false);
   let [score, setScore] = useState(0);
   let [result, setResult] = useState(false);
@@ -19,22 +22,7 @@ const Quiz = () => {
   let Option4 = useRef(null);
   let option_array = [Option1, Option2, Option3, Option4];
 
-  const randomNumber = (r,o)=>{
-    let arr = []
-  for (let i = 1; i <= r; i++) {
-    arr.push(i)
-  }
-  let result = [];
-  for (let i = 1; i <= o; i++) {
-    const random = Math.floor(Math.random() * (r - i));
-    result.push(arr[random]);
-    arr[random] = arr[r - i];
-  }
-
-  return result;
-  }
-  console.log(randomNumber(8,1))
-  // setIndex(randomNumber(8,1))
+  
   const checkAns = (e, ans) => {
     if (lock === false) {
       if (question.ans === ans) {
@@ -48,16 +36,17 @@ const Quiz = () => {
       }
     }
   };
-
-
+  let min = 0;
+  let max = quizzes[quizNo].questions.length;
   const nextQue = () => {
     if (lock === true) {
       if (index === quizzes[quizNo].questions.length - 1) {
         setResult(true);
         return 0;
-      }
+      }      
       setIndex(++index);
-      setQuestion(quizzes[quizNo].questions[index]);
+      random(min, max);
+      setQuestion(quizzes[quizNo].questions[randomQueNo]);
 
       setLock(false);
       option_array?.map((option) => {
@@ -68,6 +57,39 @@ const Quiz = () => {
     }
   };
 
+
+  let history = [];
+  const random = (min, max)=>{
+    const randomnumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    if(history.includes(randomnumber)){
+      return ;
+    }else{
+      setRandomQueNo(randomnumber)
+      history.push(randomnumber);
+    }
+  }
+  // console.log(history)
+
+
+  const submitScore = async()=>{
+    try {
+      const {data, error} = await supabase
+        .from("score_table")
+        .insert({
+          user_email: "testemail@pft.com",
+          quiz_name: quizzes[quizNo].title,
+          quiz_score: score,
+          quiz_data: {}
+        })
+        if(error) throw error;
+        alert("Results Submitted Successfully")
+        navigate('/quiz');
+      
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   return (
     <div className="quiz">
       <div className="w-[640px] m-auto mt-[50px] border border-black text-[#262626] flex flex-col gap-5 rounded px-[40px] py-[50px]">
@@ -76,7 +98,7 @@ const Quiz = () => {
         {result ? (
           <>
             <h2>You Scored {score} out of {quizzes[quizNo].questions.length}</h2>
-        <button className="btn mx-auto w-64 h-14 bg-[#553f9a] text-white text-2xl font-semibold rounded-lg cursor-pointer">Submit</button>
+        <button className="btn mx-auto w-64 h-14 bg-[#553f9a] text-white text-2xl font-semibold rounded-lg cursor-pointer" onClick={submitScore}>Submit</button>
           </>
         ) : (
           <>
@@ -84,6 +106,7 @@ const Quiz = () => {
               {index + 1}. {question?.question}
             </h2>
             <ul>
+            
               <li
                 ref={Option1}
                 className="flex items-center h-16 ps-[15px] border border-solid rounded-lg mb-5 text-xl cursor-pointer"

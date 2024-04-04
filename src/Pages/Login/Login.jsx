@@ -21,7 +21,8 @@ const Login = ({ setToken }) => {
 
       if (error) throw error;
       setToken(data);
-      navigate("/quiz");
+      if(data.user.email === "admin@pft.com" ? navigate("/admin") : navigate("/quiz"));
+      
 
     } catch (error) {
       alert(error);

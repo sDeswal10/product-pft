@@ -7,9 +7,11 @@ import Quiz from './Pages/Quiz/Quiz';
 import Login from './Pages/Login/Login';
 import { useEffect, useState } from 'react';
 import QuizHome from './Pages/Quiz/QuizHome';
+import Admin from './Pages/Admin/Admin';
 
 function App() {
-  const [token, setToken] = useState(false)
+  const [token, setToken] = useState(false);
+  const [user, setUser] = useState();
 
   if(token){
     localStorage.setItem('token',JSON.stringify(token))
@@ -19,6 +21,7 @@ function App() {
     if(localStorage.getItem('token')){
       let data = JSON.parse(localStorage.getItem('token'))
       setToken(data)
+      setUser(data);
     }
     
   }, [])
@@ -33,6 +36,7 @@ function App() {
         <Route path='/login' element={<Login setToken={setToken}/>}/>
         {token ? <Route path='/quiz' element={<QuizHome/>}/> : ""}
         <Route path='/test/:quizNo' element={<Quiz/>}/>
+        {user?.user?.email === "admin@pft.com" ? <Route path='admin' element={<Admin userData={user.user}/>}/> : ""}
         
         
       </Routes>

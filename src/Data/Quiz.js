@@ -571,19 +571,19 @@ export const quizzes = [
       },
       {
         question: `Alternate name of Kartofal.`,
-        options1: "Poteto",
+        options1: "Potato",
         options2: "tometo",
         options3: "Onion",
         options4: "Gobhi",
         ans: 1,
       },
       {
-        question: `what is Brech bohnen ?`,
+        question: `what is Brech bohnen?`,
         options1: "Onion",
         options2: "tomato",
         options3: "sem ki fali",
         options4: "Bhindi",
-        ans: 1,
+        ans: 3,
       },
       {
         question: `Sabji in german?`,

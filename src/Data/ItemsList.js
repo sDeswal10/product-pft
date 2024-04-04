@@ -2017,7 +2017,7 @@ export const itemsList = [
         {
             articleNo: "1926",
             articleName: "Montepulciano 12.5%",
-            articleDescription: "",
+            articleDescription: "Red Wine",
             articleImage: LQ10,
             articleBrand: "",
             articleQuantity: ["0.75L/1.5LTR x 6 flasche"]
@@ -2025,7 +2025,7 @@ export const itemsList = [
         {
             articleNo: "2473",
             articleName: "INDIAN Chenin Blanc /Savion Weiß Wine (SULA)12.5%",
-            articleDescription: "Red/White wine",
+            articleDescription: "White wine",
             articleImage: LQ11,
             articleBrand: "",
             articleQuantity: ["0.75L x 6 flasche"]
@@ -2033,7 +2033,7 @@ export const itemsList = [
         {
             articleNo: "2472",
             articleName: "INDIAN Cabernet Shiraz Rot Wine (SULA) 13.5%",
-            articleDescription: "Red/White wine",
+            articleDescription: "Red",
             articleImage: LQ12,
             articleBrand: "",
             articleQuantity: ["0.75L x 6 flasche"]

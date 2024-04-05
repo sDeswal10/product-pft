@@ -58,22 +58,22 @@ const Admin = () => {
             <td className="px-6 py-4">{result.quiz_score}</td>
             <td className="px-6 py-4">
                 <ul>
-                  {result.user_responses.map((response, j) => (
-                    <li key={j}>{response.question}</li>
+                  {result?.user_responses?.map((response, j) => (
+                    <li key={j}>{response}</li>
+                  ))}
+                </ul>
+              </td>            
+              <td className="px-6 py-4">
+                <ul>
+                  {result?.user_responses?.map((response, j) => (
+                    <li key={j}>{response}</li>
                   ))}
                 </ul>
               </td>
               <td className="px-6 py-4">
                 <ul>
-                  {result.user_responses.map((response, j) => (
-                    <li key={j}>{response.user_answer}</li>
-                  ))}
-                </ul>
-              </td>
-              <td className="px-6 py-4">
-                <ul>
-                  {result.user_responses.map((response, j) => (
-                    <li key={j}>{response.correct_answer}</li>
+                  {result?.user_responses?.map((response, j) => (
+                    <li key={j}>{response}</li>
                   ))}
                 </ul>
               </td>                     

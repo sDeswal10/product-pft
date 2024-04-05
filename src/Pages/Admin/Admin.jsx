@@ -19,7 +19,6 @@ const Admin = () => {
       console.log(error);
     }
   };
-  console.log(results);
 
   return (
     <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -35,14 +34,20 @@ const Admin = () => {
             <th scope="col" className="px-6 py-3">
               Quiz Score
             </th>
-            {/* <th scope="col" className="px-6 py-3">
-              Quiz Data
-            </th> */}
+            <th scope="col" className="px-6 py-3">
+              Questions
+            </th>
+            <th scope="col" className="px-6 py-3">
+              User Answer
+            </th>
+            <th scope="col" className="px-6 py-3">
+              Correct Answer
+            </th>
           </tr>
         </thead>
         <tbody>
-          {results.map((result, i)=>(
-            <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+          {results?.map((result, i)=>(
+            <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700" key={i}>
             <th
               scope="row"
               className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -51,12 +56,32 @@ const Admin = () => {
             </th>
             <td className="px-6 py-4">{result.quiz_name}</td>
             <td className="px-6 py-4">{result.quiz_score}</td>
-            {/* <td className="px-6 py-4"></td> */}
+            <td className="px-6 py-4">
+                <ul>
+                  {result.user_responses.map((response, j) => (
+                    <li key={j}>{response.question}</li>
+                  ))}
+                </ul>
+              </td>
+              <td className="px-6 py-4">
+                <ul>
+                  {result.user_responses.map((response, j) => (
+                    <li key={j}>{response.user_answer}</li>
+                  ))}
+                </ul>
+              </td>
+              <td className="px-6 py-4">
+                <ul>
+                  {result.user_responses.map((response, j) => (
+                    <li key={j}>{response.correct_answer}</li>
+                  ))}
+                </ul>
+              </td>                     
           </tr>
           ))}
           
         </tbody>
-      </table>
+      </table>     
     </div>
   );
 };

@@ -36,7 +36,7 @@ const Quiz = () => {
       }
     }
   };
-  let min = 0;
+  let min = 1;
   let max = quizzes[quizNo].questions.length;
   const nextQue = () => {
     if (lock === true) {
@@ -60,9 +60,9 @@ const Quiz = () => {
 
   let history = [];
   const random = (min, max)=>{
-    const randomnumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    const randomnumber = Math.floor(Math.random() * (max - min + 1));
     if(history.includes(randomnumber)){
-      return ;
+      return random(max, min);
     }else{
       setRandomQueNo(randomnumber)
       history.push(randomnumber);

@@ -12,18 +12,14 @@ const Login = ({ setToken }) => {
 
   async function handleSubmit(e) {
     e.preventDefault();
-
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
         email: formData.email,
         password: formData.password,
       });
-
       if (error) throw error;
       setToken(data);
       if(data.user.email === "admin@pft.com" ? navigate("/admin") : navigate("/quiz"));
-      
-
     } catch (error) {
       alert(error);
     }

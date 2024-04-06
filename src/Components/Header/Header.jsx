@@ -12,7 +12,7 @@ const Header = () => {
       setUser(data);
       setLoggedIn(true);
     }
-  }, [loggedIn]);
+  }, []);
 
   const logoutUser = () => {
     localStorage.removeItem("token");

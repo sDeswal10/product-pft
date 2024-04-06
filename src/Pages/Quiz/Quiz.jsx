@@ -4,7 +4,7 @@ import "./quiz.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { supabase } from "../../Client/Client";
 
-const Quiz = () => {
+const Quiz = ({user}) => {
   let [question, setQuestion] = useState([]);
   let [index, setIndex] = useState(0);
   const navigate = useNavigate()
@@ -69,7 +69,7 @@ const Quiz = () => {
       const {data, error} = await supabase
         .from("score_table")
         .insert({
-          user_email: "testemail@pft.com",
+          user_email: user.user.email,
           quiz_name: quizzes[quizNo].title,
           quiz_score: score,
           user_responses: userResponses,

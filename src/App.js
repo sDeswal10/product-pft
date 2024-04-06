@@ -8,6 +8,8 @@ import Login from './Pages/Login/Login';
 import { useEffect, useState } from 'react';
 import QuizHome from './Pages/Quiz/QuizHome';
 import Admin from './Pages/Admin/Admin';
+import Result from './Pages/Result/Result';
+import UserResponses from './Pages/Result/UserResponses';
 
 function App() {
   const [token, setToken] = useState(false);
@@ -35,8 +37,10 @@ function App() {
         <Route path='/product/:id' element={<Items/>}/>
         <Route path='/login' element={<Login setToken={setToken}/>}/>
         <Route path='/quiz' element={token ? <QuizHome/> : <Home/>}/>
-        <Route path='/test/:quizNo' element={<Quiz/>}/>
-        <Route path='/admin' element={user?.user?.email === "admin@pft.com" ? <Admin/> : <QuizHome/>}/>       
+        <Route path='/test/:quizNo' element={<Quiz user={user}/>}/>
+        <Route path='/admin' element={user?.user?.email === "admin@pft.com" ? <Admin/> : <QuizHome/>}/> 
+        <Route path='/result/:userEmail' element={<Result/>}/>
+        <Route path='/result/:userEmail/:quizNo' element={<UserResponses/>}/>      
         
       </Routes>
     </BrowserRouter>

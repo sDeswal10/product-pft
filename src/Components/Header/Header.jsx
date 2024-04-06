@@ -12,7 +12,7 @@ const Header = () => {
       setUser(data);
       setLoggedIn(true);
     }
-  }, []);
+  }, [loggedIn]);
 
   const logoutUser = () => {
     localStorage.removeItem("token");
@@ -28,8 +28,8 @@ const Header = () => {
       </Link>
       <span>
         {loggedIn ? (
-          <>      
-            <Link to="/quiz">{user.user.email}</Link>
+          <>
+          {user.user.email === "admin@pft.com" ? <Link to="/admin">{user.user.email}</Link> : <Link to="/quiz">{user.user.email}</Link>}    
             <span className="mx-2 cursor-pointer font-semibold" onClick={logoutUser}>Logout</span>
           </>
         ) : (

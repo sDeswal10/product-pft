@@ -1,6 +1,6 @@
 export const quizzes = [
   {
-    title: "Quiz 1",
+    title: "Quiz1",
     id: 0,
     questions: [
       {
@@ -168,7 +168,7 @@ export const quizzes = [
     ]
   },
   {
-    title: "Quiz 2",
+    title: "Quiz2",
     id: 1,
     questions: [
       {
@@ -336,7 +336,7 @@ export const quizzes = [
     ]
   },
   {
-    title: "Quiz 3",
+    title: "Quiz3",
     id: 3,
     questions: [
       {
@@ -506,7 +506,7 @@ export const quizzes = [
     ]
   },
   {
-    title: "Quiz 4",
+    title: "Quiz4",
     id: 4,
     questions: [
       
